@@ -1,3 +1,0 @@
-C:/Users/priss/OneDrive - Reseau-GES/Documents/Language C/Chapitre 1/Exo/CLionProjects/projet_C/cmake-build-debug/CMakeFiles/projet_C.dir
-C:/Users/priss/OneDrive - Reseau-GES/Documents/Language C/Chapitre 1/Exo/CLionProjects/projet_C/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/priss/OneDrive - Reseau-GES/Documents/Language C/Chapitre 1/Exo/CLionProjects/projet_C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
