@@ -1,7 +1,8 @@
 // input.c
 
 #include "input.h"
-#include "game.h"
+
+extern int running; // Déclaré dans game.c
 
 void handleInput(SDL_Event* event) {
     while (SDL_PollEvent(event)) {
@@ -21,18 +22,24 @@ void handleInput(SDL_Event* event) {
                         player.onGround = 0;
                     }
                     break;
-                default:
+                case SDLK_ESCAPE:
+                    running = 0;
                     break;
             }
         } else if (event->type == SDL_KEYUP) {
             switch (event->key.keysym.sym) {
                 case SDLK_LEFT:
-                case SDLK_RIGHT:
-                    player.velocityX = 0;
+                    if (player.velocityX < 0) {
+                        player.velocityX = 0;
+                    }
                     break;
-                default:
+                case SDLK_RIGHT:
+                    if (player.velocityX > 0) {
+                        player.velocityX = 0;
+                    }
                     break;
             }
         }
     }
 }
+

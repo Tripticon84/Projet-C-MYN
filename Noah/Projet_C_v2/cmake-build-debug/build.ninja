@@ -52,49 +52,49 @@ build cmake_object_order_depends_target_Projet_C_v2: phony || .
 build CMakeFiles/Projet_C_v2.dir/src/game.c.obj: C_COMPILER__Projet_C_v2_unscanned_Debug C$:/Users/priss/OneDrive$ -$ Reseau-GES/Documents/2eme$ année/Language$ C/Chapitre$ 1/Exo/CLionProjects/Projet_C_v2/src/game.c || cmake_object_order_depends_target_Projet_C_v2
   DEP_FILE = CMakeFiles\Projet_C_v2.dir\src\game.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include"
+  INCLUDES = -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2_image" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include"
   OBJECT_DIR = CMakeFiles\Projet_C_v2.dir
   OBJECT_FILE_DIR = CMakeFiles\Projet_C_v2.dir\src
 
 build CMakeFiles/Projet_C_v2.dir/src/graphics.c.obj: C_COMPILER__Projet_C_v2_unscanned_Debug C$:/Users/priss/OneDrive$ -$ Reseau-GES/Documents/2eme$ année/Language$ C/Chapitre$ 1/Exo/CLionProjects/Projet_C_v2/src/graphics.c || cmake_object_order_depends_target_Projet_C_v2
   DEP_FILE = CMakeFiles\Projet_C_v2.dir\src\graphics.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include"
+  INCLUDES = -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2_image" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include"
   OBJECT_DIR = CMakeFiles\Projet_C_v2.dir
   OBJECT_FILE_DIR = CMakeFiles\Projet_C_v2.dir\src
 
 build CMakeFiles/Projet_C_v2.dir/src/input.c.obj: C_COMPILER__Projet_C_v2_unscanned_Debug C$:/Users/priss/OneDrive$ -$ Reseau-GES/Documents/2eme$ année/Language$ C/Chapitre$ 1/Exo/CLionProjects/Projet_C_v2/src/input.c || cmake_object_order_depends_target_Projet_C_v2
   DEP_FILE = CMakeFiles\Projet_C_v2.dir\src\input.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include"
+  INCLUDES = -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2_image" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include"
   OBJECT_DIR = CMakeFiles\Projet_C_v2.dir
   OBJECT_FILE_DIR = CMakeFiles\Projet_C_v2.dir\src
 
 build CMakeFiles/Projet_C_v2.dir/src/level.c.obj: C_COMPILER__Projet_C_v2_unscanned_Debug C$:/Users/priss/OneDrive$ -$ Reseau-GES/Documents/2eme$ année/Language$ C/Chapitre$ 1/Exo/CLionProjects/Projet_C_v2/src/level.c || cmake_object_order_depends_target_Projet_C_v2
   DEP_FILE = CMakeFiles\Projet_C_v2.dir\src\level.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include"
+  INCLUDES = -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2_image" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include"
   OBJECT_DIR = CMakeFiles\Projet_C_v2.dir
   OBJECT_FILE_DIR = CMakeFiles\Projet_C_v2.dir\src
 
 build CMakeFiles/Projet_C_v2.dir/src/main.c.obj: C_COMPILER__Projet_C_v2_unscanned_Debug C$:/Users/priss/OneDrive$ -$ Reseau-GES/Documents/2eme$ année/Language$ C/Chapitre$ 1/Exo/CLionProjects/Projet_C_v2/src/main.c || cmake_object_order_depends_target_Projet_C_v2
   DEP_FILE = CMakeFiles\Projet_C_v2.dir\src\main.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include"
+  INCLUDES = -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2_image" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include"
   OBJECT_DIR = CMakeFiles\Projet_C_v2.dir
   OBJECT_FILE_DIR = CMakeFiles\Projet_C_v2.dir\src
 
 build CMakeFiles/Projet_C_v2.dir/src/player.c.obj: C_COMPILER__Projet_C_v2_unscanned_Debug C$:/Users/priss/OneDrive$ -$ Reseau-GES/Documents/2eme$ année/Language$ C/Chapitre$ 1/Exo/CLionProjects/Projet_C_v2/src/player.c || cmake_object_order_depends_target_Projet_C_v2
   DEP_FILE = CMakeFiles\Projet_C_v2.dir\src\player.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include"
+  INCLUDES = -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2_image" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include"
   OBJECT_DIR = CMakeFiles\Projet_C_v2.dir
   OBJECT_FILE_DIR = CMakeFiles\Projet_C_v2.dir\src
 
 build CMakeFiles/Projet_C_v2.dir/src/utils.c.obj: C_COMPILER__Projet_C_v2_unscanned_Debug C$:/Users/priss/OneDrive$ -$ Reseau-GES/Documents/2eme$ année/Language$ C/Chapitre$ 1/Exo/CLionProjects/Projet_C_v2/src/utils.c || cmake_object_order_depends_target_Projet_C_v2
   DEP_FILE = CMakeFiles\Projet_C_v2.dir\src\utils.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include"
+  INCLUDES = -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2_image" -I"C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme année/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include"
   OBJECT_DIR = CMakeFiles\Projet_C_v2.dir
   OBJECT_FILE_DIR = CMakeFiles\Projet_C_v2.dir\src
 

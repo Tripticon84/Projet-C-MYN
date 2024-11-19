@@ -2,13 +2,10 @@
 
 #include "game.h"
 
-GameState gameState = {0}; // Initialisation
-
 // Variables globales du jeu
 SDL_Window* window = NULL;
 SDL_Renderer* renderer = NULL;
 int running = 1;
-
 
 // Initialise le jeu
 int initGame() {
@@ -26,10 +23,10 @@ int initGame() {
     }
 
     // Créer la fenêtre
-    window = SDL_CreateWindow("Jeu de plateforme",
+    window = SDL_CreateWindow("MYN",
                               SDL_WINDOWPOS_CENTERED,
                               SDL_WINDOWPOS_CENTERED,
-                              800, 600,
+                              792, 612, // Taille ajustée
                               SDL_WINDOW_SHOWN);
     if (!window) {
         printf("Erreur lors de la création de la fenêtre: %s\n", SDL_GetError());
@@ -50,7 +47,7 @@ int initGame() {
 
     // Initialiser les autres modules
     initPlayer();
-    loadLevel("assets/levels/level1.txt");
+    loadLevel("../assets/levels/level1.txt");
 
     return 0;
 }
