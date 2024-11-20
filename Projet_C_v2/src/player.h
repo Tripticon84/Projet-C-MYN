@@ -8,9 +8,13 @@
 #include "level.h"
 
 // Dimensions du joueur
-#define PLAYER_WIDTH 32
+#define PLAYER_WIDTH 13
 #define PLAYER_HEIGHT 19
 #define PLAYER_SCALE 2
+
+// Ajoutez ces définitions pour l'espacement entre les tuiles
+#define TILE_SPACE_X 19 // Espacement horizontal entre les tuiles en pixels
+#define TILE_SPACE_Y 0  // Espacement vertical entre les tuiles en pixels
 
 // Constantes pour les animations
 #define PLAYER_ANIM_FRAMES 4 // Nombre de frames par animation

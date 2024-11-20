@@ -20,11 +20,11 @@ void handleInput() {
     player.velocityX = 0;
 
     // Gérer les mouvements gauche/droite
-    if (keystate[SDL_SCANCODE_LEFT]) {
+    if (keystate[SDL_SCANCODE_LEFT] || keystate[SDL_SCANCODE_A] ) {
         player.velocityX = -5;
         player.direction = PLAYER_DIRECTION_LEFT;
         player.state = PLAYER_STATE_WALKING;
-    } else if (keystate[SDL_SCANCODE_RIGHT]) {
+    } else if (keystate[SDL_SCANCODE_RIGHT] || keystate[SDL_SCANCODE_D]) {
         player.velocityX = 5;
         player.direction = PLAYER_DIRECTION_RIGHT;
         player.state = PLAYER_STATE_WALKING;
@@ -33,7 +33,7 @@ void handleInput() {
     }
 
     // Gérer le saut
-    if (keystate[SDL_SCANCODE_SPACE]) {
+    if (keystate[SDL_SCANCODE_SPACE] || keystate[SDL_SCANCODE_W]) {
         if (player.onGround) {
             player.velocityY = -15; // Saut
             player.onGround = 0;

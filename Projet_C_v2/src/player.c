@@ -23,8 +23,8 @@ void initPlayer() {
     }
 
     // Initialiser la position et la taille du joueur
-    player.rect.x = 100;
-    player.rect.y = 100;
+    player.rect.x = 36;
+    player.rect.y = 576;
     player.rect.w = PLAYER_WIDTH * PLAYER_SCALE;
     player.rect.h = PLAYER_HEIGHT * PLAYER_SCALE;
     player.velocityX = 0;
@@ -139,8 +139,8 @@ void drawPlayer() {
     // Calculer la colonne (col) en fonction de la frame
     int col = player.frame;
 
-    // Calculer les coordonnées source sans espacement
-    srcRect.x = col * PLAYER_WIDTH;
+    // Calculer les coordonnées source en tenant compte de l'espacement
+    srcRect.x = col * (PLAYER_WIDTH + TILE_SPACE_X);
     srcRect.y = 0; // Une seule ligne
 
     // Déterminer le flip en fonction de la direction
