@@ -8,8 +8,8 @@
 #include "level.h"
 
 // Dimensions du joueur
-#define PLAYER_WIDTH 16
-#define PLAYER_HEIGHT 32
+#define PLAYER_WIDTH 32
+#define PLAYER_HEIGHT 19
 #define PLAYER_SCALE 2
 
 // Constantes pour les animations
@@ -55,9 +55,6 @@ void drawPlayer();
 
 // Nettoie les ressources du joueur
 void cleanupPlayer();
-
-// Mettre à jour l'animation
-void updatePlayerAnimation();
 
 // Accès global au joueur
 extern Player player;
