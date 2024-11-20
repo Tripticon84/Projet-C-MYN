@@ -54,11 +54,9 @@ int initGame() {
 
 // Boucle principale du jeu
 void gameLoop() {
-    SDL_Event event;
-
     while (running) {
         // Gérer les événements
-        handleInput(&event);
+        handleInput();
 
         // Mettre à jour le jeu
         updatePlayer();

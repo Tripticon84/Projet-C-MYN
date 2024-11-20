@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/cmake-build-debug"
+			"value" : "c:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet-C-MYN/Projet_C_v2/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet-C-MYN/Projet_C_v2/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -503,7 +503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2"
+			"value" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet-C-MYN/Projet_C_v2"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1135,7 +1135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/cmake-build-debug"
+			"value" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet-C-MYN/Projet_C_v2/cmake-build-debug"
 		},
 		{
 			"name" : "Projet_C_v2_IS_TOP_LEVEL",
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2"
+			"value" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet-C-MYN/Projet_C_v2"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
@@ -1172,42 +1172,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "TRUE"
-		},
-		{
-			"name" : "projet_C_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/cmake-build-debug"
-		},
-		{
-			"name" : "projet_C_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "projet_C_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2"
 		}
 	],
 	"kind" : "cache",

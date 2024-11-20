@@ -7,6 +7,6 @@
 #include "player.h"
 
 // Fonction pour gérer les entrées utilisateur
-void handleInput(SDL_Event* event);
+void handleInput();
 
 #endif // INPUT_H

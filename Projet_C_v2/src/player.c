@@ -10,6 +10,10 @@ extern char levelData[LEVEL_HEIGHT][LEVEL_WIDTH + 2];
 // Accès au renderer
 extern SDL_Renderer* renderer;
 
+// Déclaration des fonctions internes
+static void updatePlayerAnimation();
+static void checkTileCollisions(SDL_Rect* rect, int* velocityX, int* velocityY);
+
 void initPlayer() {
     // Charger la texture du joueur
     player.texture = loadTexture("../assets/images/player.png");
@@ -77,7 +81,7 @@ void updatePlayer() {
     updatePlayerAnimation();
 }
 
-void updatePlayerAnimation() {
+static void updatePlayerAnimation() {
     if (player.state == PLAYER_STATE_WALKING) {
         player.frameTimer += 16; // Supposons que updatePlayer est appelé toutes les 16 ms (~60 FPS)
         if (player.frameTimer >= player.frameDuration) {
@@ -90,7 +94,7 @@ void updatePlayerAnimation() {
     }
 }
 
-void checkTileCollisions(SDL_Rect* rect, int* velocityX, int* velocityY) {
+static void checkTileCollisions(SDL_Rect* rect, int* velocityX, int* velocityY) {
     SDL_Rect tileRect = {0, 0, TILE_WIDTH * RENDER_SCALE, TILE_HEIGHT * RENDER_SCALE};
 
     for (int y = 0; y < LEVEL_HEIGHT; y++) {
@@ -132,22 +136,20 @@ void drawPlayer() {
     srcRect.w = PLAYER_WIDTH;
     srcRect.h = PLAYER_HEIGHT;
 
-    // Calculer la ligne (row) en fonction de la direction
-    int row = 0;
-    if (player.direction == PLAYER_DIRECTION_RIGHT) {
-        row = 1; // 2ème ligne (indexée à partir de 0)
-    } else if (player.direction == PLAYER_DIRECTION_LEFT) {
-        row = 3; // 4ème ligne
-    }
-
     // Calculer la colonne (col) en fonction de la frame
     int col = player.frame;
 
-    // Calculer les coordonnées source en tenant compte de l'espacement
-    srcRect.x = col * (PLAYER_WIDTH + 1) + 1;
-    srcRect.y = row * (PLAYER_HEIGHT + 1) + 1;
+    // Calculer les coordonnées source sans espacement
+    srcRect.x = col * PLAYER_WIDTH;
+    srcRect.y = 0; // Une seule ligne
 
-    SDL_RenderCopy(renderer, player.texture, &srcRect, &player.rect);
+    // Déterminer le flip en fonction de la direction
+    SDL_RendererFlip flip = SDL_FLIP_NONE;
+    if (player.direction == PLAYER_DIRECTION_LEFT) {
+        flip = SDL_FLIP_HORIZONTAL;
+    }
+
+    SDL_RenderCopyEx(renderer, player.texture, &srcRect, &player.rect, 0, NULL, flip);
 }
 
 void cleanupPlayer() {

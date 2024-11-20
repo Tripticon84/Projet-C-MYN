@@ -59,15 +59,15 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2"
+					"path" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet-C-MYN/Projet_C_v2/include/SDL2"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include/SDL2_image"
+					"path" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet-C-MYN/Projet_C_v2/include/SDL2_image"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet_C_v2/include"
+					"path" : "C:/Users/priss/OneDrive - Reseau-GES/Documents/2eme ann\u00e9e/Language C/Chapitre 1/Exo/CLionProjects/Projet-C-MYN/Projet_C_v2/include"
 				}
 			],
 			"language" : "C",
@@ -111,17 +111,17 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "\"C:\\Users\\priss\\OneDrive - Reseau-GES\\Documents\\2eme ann\u00e9e\\Language C\\Chapitre 1\\Exo\\CLionProjects\\Projet_C_v2\\lib\\libSDL2main.a\"",
+				"fragment" : "\"C:\\Users\\priss\\OneDrive - Reseau-GES\\Documents\\2eme ann\u00e9e\\Language C\\Chapitre 1\\Exo\\CLionProjects\\Projet-C-MYN\\Projet_C_v2\\lib\\libSDL2main.a\"",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "\"C:\\Users\\priss\\OneDrive - Reseau-GES\\Documents\\2eme ann\u00e9e\\Language C\\Chapitre 1\\Exo\\CLionProjects\\Projet_C_v2\\lib\\libSDL2.dll.a\"",
+				"fragment" : "\"C:\\Users\\priss\\OneDrive - Reseau-GES\\Documents\\2eme ann\u00e9e\\Language C\\Chapitre 1\\Exo\\CLionProjects\\Projet-C-MYN\\Projet_C_v2\\lib\\libSDL2.dll.a\"",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "\"C:\\Users\\priss\\OneDrive - Reseau-GES\\Documents\\2eme ann\u00e9e\\Language C\\Chapitre 1\\Exo\\CLionProjects\\Projet_C_v2\\lib\\libSDL2_image.dll.a\"",
+				"fragment" : "\"C:\\Users\\priss\\OneDrive - Reseau-GES\\Documents\\2eme ann\u00e9e\\Language C\\Chapitre 1\\Exo\\CLionProjects\\Projet-C-MYN\\Projet_C_v2\\lib\\libSDL2_image.dll.a\"",
 				"role" : "libraries"
 			},
 			{
