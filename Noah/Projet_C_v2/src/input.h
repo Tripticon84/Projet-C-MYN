@@ -3,10 +3,10 @@
 #ifndef INPUT_H
 #define INPUT_H
 
-#include "game.h"
+#include "graphics.h"
 #include "player.h"
 
-// Gère les événements d'entrée
+// Fonction pour gérer les entrées utilisateur
 void handleInput(SDL_Event* event);
 
 #endif // INPUT_H

@@ -5,6 +5,29 @@
 
 #include "graphics.h"
 #include "utils.h"
+#include "level.h"
+
+// Dimensions du joueur
+#define PLAYER_WIDTH 16
+#define PLAYER_HEIGHT 32
+#define PLAYER_SCALE 2
+
+// Constantes pour les animations
+#define PLAYER_ANIM_FRAMES 4 // Nombre de frames par animation
+#define PLAYER_FRAME_DURATION 100 // Durée de chaque frame en millisecondes
+
+// États du joueur
+typedef enum {
+    PLAYER_STATE_IDLE,
+    PLAYER_STATE_WALKING,
+    // Ajoutez d'autres états si nécessaire
+} PlayerState;
+
+// Directions du joueur
+typedef enum {
+    PLAYER_DIRECTION_RIGHT,
+    PLAYER_DIRECTION_LEFT,
+} PlayerDirection;
 
 // Structure du joueur
 typedef struct {
@@ -13,6 +36,12 @@ typedef struct {
     int velocityX;
     int velocityY;
     int onGround;
+    // Variables pour l'animation
+    int frame;
+    int frameTimer;
+    int frameDuration;
+    PlayerState state;
+    PlayerDirection direction;
 } Player;
 
 // Initialise le joueur

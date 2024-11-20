@@ -2,4 +2,4 @@
 
 #include "utils.h"
 
-// Si vous avez des fonctions utilitaires supplémentaires, implémentez-les ici
+// Implémentez ici vos fonctions utilitaires si nécessaire
