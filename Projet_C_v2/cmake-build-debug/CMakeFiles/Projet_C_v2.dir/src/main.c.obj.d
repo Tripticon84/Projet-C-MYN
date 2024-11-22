@@ -1,7 +1,5 @@
 CMakeFiles/Projet_C_v2.dir/src/main.c.obj: \
  C:\Users\mathi\Esgi\2eme\ annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\main.c \
- C:\Users\mathi\Esgi\2eme\ annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\game.h \
- C:\Users\mathi\Esgi\2eme\ annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\graphics.h \
  C:/Users/mathi/Esgi/2EMEAN~1/C/PROJET~1/PROJET~1/PROJET~1/include/SDL2/SDL.h \
  C:/Users/mathi/Esgi/2EMEAN~1/C/PROJET~1/PROJET~1/PROJET~1/include/SDL2/SDL_main.h \
  C:/Users/mathi/Esgi/2EMEAN~1/C/PROJET~1/PROJET~1/PROJET~1/include/SDL2/SDL_stdinc.h \
@@ -184,13 +182,9 @@ CMakeFiles/Projet_C_v2.dir/src/main.c.obj: \
  C:/Users/mathi/Esgi/2EMEAN~1/C/PROJET~1/PROJET~1/PROJET~1/include/SDL2/SDL_version.h \
  C:/Users/mathi/Esgi/2EMEAN~1/C/PROJET~1/PROJET~1/PROJET~1/include/SDL2/SDL_locale.h \
  C:/Users/mathi/Esgi/2EMEAN~1/C/PROJET~1/PROJET~1/PROJET~1/include/SDL2/SDL_misc.h \
- C:/Users/mathi/Esgi/2EMEAN~1/C/PROJET~1/PROJET~1/PROJET~1/include/SDL2/SDL_image.h \
+ C:/Users/mathi/Esgi/2EMEAN~1/C/PROJET~1/PROJET~1/PROJET~1/include/SDL2/SDL_ttf.h \
  C:/Users/mathi/Esgi/2EMEAN~1/C/PROJET~1/PROJET~1/PROJET~1/include/SDL2/SDL.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- C:\Users\mathi\Esgi\2eme\ annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\level.h \
- C:\Users\mathi\Esgi\2eme\ annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\utils.h \
- C:\Users\mathi\Esgi\2eme\ annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\player.h \
- C:\Users\mathi\Esgi\2eme\ annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\input.h
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h
