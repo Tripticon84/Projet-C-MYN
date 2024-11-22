@@ -20,7 +20,8 @@ include_directories(
 file(GLOB_RECURSE SOURCES ${PROJECT_SOURCE_DIR}/src/*.c)
 
 # Créer l'exécutable
-add_executable(${PROJECT_NAME} ${SOURCES})
+add_executable(${PROJECT_NAME} ${SOURCES}
+        src/menu.c)
 
 # Lier les bibliothèques SDL2 et SDL2_image, avec -lmingw32 au début
 target_link_libraries(${PROJECT_NAME}
