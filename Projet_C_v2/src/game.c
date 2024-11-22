@@ -2,10 +2,12 @@
 
 #include "game.h"
 
+
 // Variables globales du jeu
 SDL_Window* window = NULL;
 SDL_Renderer* renderer = NULL;
 int running = 1;
+GameState currentGameState = GAME_STATE_MENU;
 
 // Initialise le jeu
 int initGame() {
@@ -46,8 +48,7 @@ int initGame() {
     }
 
     // Initialiser les autres modules
-    initPlayer();
-    loadLevel("../assets/levels/level1.txt");
+    initMenu();
 
     return 0;
 }
@@ -55,20 +56,33 @@ int initGame() {
 // Boucle principale du jeu
 void gameLoop() {
     while (running) {
-        // Gérer les événements
-        handleInput();
+        switch (currentGameState) {
+            case GAME_STATE_MENU:
+                handleMenuInput();
+                updateMenu();
 
-        // Mettre à jour le jeu
-        updatePlayer();
+                SDL_RenderClear(renderer);
+                drawMenu();
+                SDL_RenderPresent(renderer);
+                break;
 
-        // Dessiner le jeu
-        SDL_RenderClear(renderer);
-        drawLevel();
-        drawPlayer();
-        SDL_RenderPresent(renderer);
+            case GAME_STATE_PLAYING:
+                //Gérer les événements
+                    handleInput();
 
-        // Contrôler le framerate
+                // Mettre à jour le jeu
+                updatePlayer();
+
+                // Dessiner le jeu
+                SDL_RenderClear(renderer);
+                drawLevel();
+                drawPlayer();
+                SDL_RenderPresent(renderer);
+            break;
+        }
+                // Contrôler le framerate
         SDL_Delay(16); // Environ 60 FPS
+
     }
 }
 

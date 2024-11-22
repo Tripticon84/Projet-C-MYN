@@ -193,6 +193,7 @@ CMakeFiles/Projet_C_v2.dir/src/game.c.obj: C:/Users/mathi/Esgi/2eme\ annee/C/Pro
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/graphics.h \
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/input.h \
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/level.h \
+  C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/menu.h \
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/player.h \
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/utils.h
 
@@ -927,6 +928,7 @@ CMakeFiles/Projet_C_v2.dir/src/main.c.obj: C:/Users/mathi/Esgi/2eme\ annee/C/Pro
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_haptic.h \
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_hidapi.h \
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_hints.h \
+  C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_image.h \
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_joystick.h \
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_keyboard.h \
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_keycode.h \
@@ -955,11 +957,17 @@ CMakeFiles/Projet_C_v2.dir/src/main.c.obj: C:/Users/mathi/Esgi/2eme\ annee/C/Pro
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_thread.h \
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_timer.h \
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_touch.h \
-  C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_ttf.h \
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_version.h \
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_video.h \
   C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/begin_code.h \
-  C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/close_code.h
+  C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/close_code.h \
+  C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/game.h \
+  C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/graphics.h \
+  C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/input.h \
+  C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/level.h \
+  C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/menu.h \
+  C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/player.h \
+  C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/utils.h
 
 CMakeFiles/Projet_C_v2.dir/src/menu.c.obj: C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/menu.c \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/adxintrin.h \
@@ -1748,6 +1756,8 @@ C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/
 
 C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/input.h:
 
+C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/menu.h:
+
 C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/player.h:
 
 C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/utils.h:
@@ -1759,7 +1769,5 @@ C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/
 C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/main.c:
 
 C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_ttf.h:
-
-C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/menu.h:
 
 C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/player.c:

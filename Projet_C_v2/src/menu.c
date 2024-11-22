@@ -77,12 +77,15 @@ void handleMenuInput() {
                     if (selectedButton == MAX_BUTTONS - 2) {
                         // lance le jeu
                         //currentGameState = GAME_STATE_PLAYING;
+                        printf("bouton play");
                     } else if (selectedButton == MAX_BUTTONS - 1) {
                         // ouvre les paramètres
+                        printf("bouton param");
                     }
                     else {
                         //quitte le jeu
-                        running=0;
+                        //running=0;
+                        printf("bouton exit");
                     }
                     break;
                 default:
@@ -97,15 +100,18 @@ void handleMenuInput() {
                     if (x >= buttons[i].rect.x && x <= buttons[i].rect.x + buttons[i].rect.w &&
                         y >= buttons[i].rect.y && y <= buttons[i].rect.y + buttons[i].rect.h) {
                         // Action du bouton cliqué
-                        if (i == MAX_BUTTONS - 2) {
+                        if (i == MAX_BUTTONS -2) {
                             // lance le jeu
                             //currentGameState = GAME_STATE_PLAYING;
+                            printf("bouton play");
                         } else if (i == MAX_BUTTONS - 1) {
                             // ouvre les paramètres
+                            printf("bouton param");
                         }
                         else {
                             //quitte le jeu
-                            running=0;
+                            //running=0;
+                            printf("bouton quitter");
                         }
                     }
                 }
