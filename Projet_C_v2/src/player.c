@@ -140,7 +140,7 @@ void drawPlayer() {
     int col = player.frame;
 
     // Calculer les coordonnées source en tenant compte de l'espacement
-    srcRect.x = col * (PLAYER_WIDTH + TILE_SPACE_X);
+    srcRect.x = col * (PLAYER_WIDTH + PLAYER_SPACE_X);
     srcRect.y = 0; // Une seule ligne
 
     // Déterminer le flip en fonction de la direction

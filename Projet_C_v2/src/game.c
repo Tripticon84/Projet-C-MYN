@@ -2,7 +2,6 @@
 
 #include "game.h"
 
-
 // Variables globales du jeu
 SDL_Window* window = NULL;
 SDL_Renderer* renderer = NULL;
@@ -47,7 +46,7 @@ int initGame() {
         return 1;
     }
 
-    // Initialiser les autres modules
+    // Initialiser le menu
     initMenu();
 
     return 0;
@@ -55,7 +54,22 @@ int initGame() {
 
 // Boucle principale du jeu
 void gameLoop() {
+    GameState previousGameState = currentGameState;
+
     while (running) {
+        if (previousGameState != currentGameState) {
+            // Changement d'état du jeu
+            if (previousGameState == GAME_STATE_MENU && currentGameState == GAME_STATE_PLAYING) {
+                // Nettoyer le menu une seule fois lors du passage au jeu
+                cleanupMenu();
+
+                // Initialiser les modules nécessaires pour le jeu
+                initPlayer();
+                loadLevel("../assets/levels/level1.txt");
+            }
+            previousGameState = currentGameState;
+        }
+
         switch (currentGameState) {
             case GAME_STATE_MENU:
                 handleMenuInput();
@@ -67,9 +81,8 @@ void gameLoop() {
                 break;
 
             case GAME_STATE_PLAYING:
-                //Gérer les événements
-                    handleInput();
-
+                // Gérer les événements
+                handleInput();
                 // Mettre à jour le jeu
                 updatePlayer();
 
@@ -78,19 +91,25 @@ void gameLoop() {
                 drawLevel();
                 drawPlayer();
                 SDL_RenderPresent(renderer);
-            break;
-        }
-                // Contrôler le framerate
-        SDL_Delay(16); // Environ 60 FPS
+                break;
 
+            // Ajoutez d'autres cas si nécessaire
+        }
+
+        // Contrôler le framerate
+        SDL_Delay(16); // Environ 60 FPS
     }
 }
 
 // Nettoie les ressources du jeu
 void cleanupGame() {
-    // Nettoyer les modules
-    cleanupPlayer();
-    cleanupLevel();
+    // Nettoyer les modules en fonction de l'état du jeu
+    if (currentGameState == GAME_STATE_PLAYING) {
+        cleanupPlayer();
+        cleanupLevel();
+    } else if (currentGameState == GAME_STATE_MENU) {
+        cleanupMenu();
+    }
 
     // Nettoyer SDL
     SDL_DestroyRenderer(renderer);
