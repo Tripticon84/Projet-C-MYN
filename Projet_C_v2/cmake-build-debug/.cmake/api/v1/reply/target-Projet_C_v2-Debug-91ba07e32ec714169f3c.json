@@ -59,15 +59,15 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/mathi/Esgi/2eme annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2"
+					"path" : "D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/mathi/Esgi/2eme annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include/SDL2_image"
+					"path" : "D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2_image"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/mathi/Esgi/2eme annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/include"
+					"path" : "D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include"
 				}
 			],
 			"language" : "C",
@@ -112,22 +112,22 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "\"C:\\Users\\mathi\\Esgi\\2eme annee\\C\\Projet_semestre1\\Projet-C-MYN\\Projet_C_v2\\lib\\libSDL2main.a\"",
+				"fragment" : "D:\\ESGI\\C\\Projet-C-MYN\\Projet_C_v2\\lib\\libSDL2main.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "\"C:\\Users\\mathi\\Esgi\\2eme annee\\C\\Projet_semestre1\\Projet-C-MYN\\Projet_C_v2\\lib\\libSDL2.dll.a\"",
+				"fragment" : "D:\\ESGI\\C\\Projet-C-MYN\\Projet_C_v2\\lib\\libSDL2.dll.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "\"C:\\Users\\mathi\\Esgi\\2eme annee\\C\\Projet_semestre1\\Projet-C-MYN\\Projet_C_v2\\lib\\libSDL2_image.dll.a\"",
+				"fragment" : "D:\\ESGI\\C\\Projet-C-MYN\\Projet_C_v2\\lib\\libSDL2_image.dll.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "\"C:\\Users\\mathi\\Esgi\\2eme annee\\C\\Projet_semestre1\\Projet-C-MYN\\Projet_C_v2\\lib\\libSDL2_ttf.dll.a\"",
+				"fragment" : "D:\\ESGI\\C\\Projet-C-MYN\\Projet_C_v2\\lib\\libSDL2_ttf.dll.a",
 				"role" : "libraries"
 			},
 			{

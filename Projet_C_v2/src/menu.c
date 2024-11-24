@@ -1,5 +1,3 @@
-// menu.c
-
 #include "menu.h"
 
 #include <math.h>
@@ -31,11 +29,10 @@ void initMenu() {
     }
 
     // Initialiser les boutons
-    // Exemple avec 3 boutons : Charger Sauvegarde 1, Charger Sauvegarde 2, Quitter
     const char* buttonTexts[MAX_BUTTONS] = {
-        "Jouer",
-        "Paramètres",
-        "Quitter"
+        "Play",
+        "Parameters",
+        "Quit"
     };
 
     for (int i = 0; i < MAX_BUTTONS; i++) {
@@ -43,13 +40,10 @@ void initMenu() {
         buttons[i].isSelected = (i == selectedButton) ? 1 : 0;
 
         // Définir la taille et la position du bouton
-        buttons[i].rect.w =200;
+        buttons[i].rect.w = 400;
         buttons[i].rect.h = 100;
         buttons[i].rect.x = (792 - buttons[i].rect.w) / 2; // Centré horizontalement
-        buttons[i].rect.y = 200 + i * 100; // Espacement vertical
-
-        // Optionnel : charger une texture pour le bouton
-        // buttons[i].texture = loadTexture("path/to/button_texture.png");
+        buttons[i].rect.y = 150 + i * 120; // Espacement vertical ajusté
         buttons[i].texture = NULL; // Pas de texture pour l'instant
     }
 }
@@ -74,15 +68,16 @@ void handleMenuInput() {
                 case SDLK_RETURN:
                 case SDLK_SPACE:
                     // Exécuter l'action du bouton sélectionné
-                    if (selectedButton == MAX_BUTTONS - 2) {
-                        // lance le jeu
-                        //currentGameState = GAME_STATE_PLAYING;
-                    } else if (selectedButton == MAX_BUTTONS - 1) {
-                        // ouvre les paramètres
-                    }
-                    else {
-                        //quitte le jeu
-                        running=0;
+                    if (selectedButton == 0) {
+                        // Lancer le jeu
+                        currentGameState = GAME_STATE_PLAYING;
+                    } else if (selectedButton == 1) {
+                        // Ouvrir les paramètres
+                        // À implémenter
+                    } else if (selectedButton == 2) {
+                        // Quitter le jeu
+                        SDL_Log("Quitter le jeu");
+                        running = 0;
                     }
                     break;
                 default:
@@ -97,15 +92,16 @@ void handleMenuInput() {
                     if (x >= buttons[i].rect.x && x <= buttons[i].rect.x + buttons[i].rect.w &&
                         y >= buttons[i].rect.y && y <= buttons[i].rect.y + buttons[i].rect.h) {
                         // Action du bouton cliqué
-                        if (i == MAX_BUTTONS - 2) {
-                            // lance le jeu
-                            //currentGameState = GAME_STATE_PLAYING;
-                        } else if (i == MAX_BUTTONS - 1) {
-                            // ouvre les paramètres
-                        }
-                        else {
-                            //quitte le jeu
-                            running=0;
+                        if (i == 0) {
+                            // Lancer le jeu
+                            currentGameState = GAME_STATE_PLAYING;
+                        } else if (i == 1) {
+                            // Ouvrir les paramètres
+                            // À implémenter
+                        } else if (i == 2) {
+                            // Quitter le jeu
+                            SDL_Log("Quitter le jeu");
+                            running = 0;
                         }
                     }
                 }
@@ -124,30 +120,22 @@ void updateMenu() {
 
 // Dessiner le menu
 void drawMenu() {
-    // Optionnel : dessiner un arrière-plan pour le menu
-    // Vous pouvez charger une texture d'arrière-plan et la dessiner ici
-
     // Dessiner les boutons
     for (int i = 0; i < MAX_BUTTONS; i++) {
-        // Si le bouton a une texture, dessinez-la
-        if (buttons[i].texture) {
-            SDL_RenderCopy(renderer, buttons[i].texture, NULL, &buttons[i].rect);
-        } else {
-            // Sinon, dessinez un rectangle
-            SDL_SetRenderDrawColor(renderer, 100, 100, 100, 255); // Gris
-            if (buttons[i].isSelected) {
-                SDL_SetRenderDrawColor(renderer, 150, 150, 150, 255); // Gris clair pour sélection
-            }
-            SDL_RenderFillRect(renderer, &buttons[i].rect);
-            SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255); // Noir pour le contour
-            SDL_RenderDrawRect(renderer, &buttons[i].rect);
+        // Dessiner le fond du bouton
+        SDL_SetRenderDrawColor(renderer, 100, 100, 100, 255); // Gris
+        if (buttons[i].isSelected) {
+            SDL_SetRenderDrawColor(renderer, 150, 150, 150, 255); // Gris clair pour la sélection
         }
+        SDL_RenderFillRect(renderer, &buttons[i].rect);
+        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255); // Noir pour le contour
+        SDL_RenderDrawRect(renderer, &buttons[i].rect);
 
         // Rendre le texte du bouton
         if (font) {
             SDL_Color textColor = {255, 255, 255, 255}; // Blanc
             if (buttons[i].isSelected) {
-                textColor.r = 255; textColor.g = 255; textColor.b = 0; // Jaune pour sélection
+                textColor.r = 255; textColor.g = 255; textColor.b = 0; // Jaune pour la sélection
             }
             SDL_Surface* textSurface = TTF_RenderText_Solid(font, buttons[i].text, textColor);
             if (textSurface) {

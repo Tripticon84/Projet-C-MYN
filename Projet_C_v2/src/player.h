@@ -13,8 +13,8 @@
 #define PLAYER_SCALE 2
 
 // Ajoutez ces définitions pour l'espacement entre les tuiles
-#define TILE_SPACE_X 19 // Espacement horizontal entre les tuiles en pixels
-#define TILE_SPACE_Y 0  // Espacement vertical entre les tuiles en pixels
+#define PLAYER_SPACE_X 19 // Espacement horizontal entre les tuiles en pixels
+#define PLAYER_SPACE_Y 0  // Espacement vertical entre les tuiles en pixels
 
 // Constantes pour les animations
 #define PLAYER_ANIM_FRAMES 4 // Nombre de frames par animation

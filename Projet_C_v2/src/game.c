@@ -6,6 +6,7 @@
 SDL_Window* window = NULL;
 SDL_Renderer* renderer = NULL;
 int running = 1;
+GameState currentGameState = GAME_STATE_MENU;
 
 // Initialise le jeu
 int initGame() {
@@ -45,27 +46,55 @@ int initGame() {
         return 1;
     }
 
-    // Initialiser les autres modules
-    initPlayer();
-    loadLevel("../assets/levels/level1.txt");
+    // Initialiser le menu
+    initMenu();
 
     return 0;
 }
 
 // Boucle principale du jeu
 void gameLoop() {
+    GameState previousGameState = currentGameState;
+
     while (running) {
-        // Gérer les événements
-        handleInput();
+        if (previousGameState != currentGameState) {
+            // Changement d'état du jeu
+            if (previousGameState == GAME_STATE_MENU && currentGameState == GAME_STATE_PLAYING) {
+                // Nettoyer le menu une seule fois lors du passage au jeu
+                cleanupMenu();
 
-        // Mettre à jour le jeu
-        updatePlayer();
+                // Initialiser les modules nécessaires pour le jeu
+                initPlayer();
+                loadLevel("../assets/levels/level1.txt");
+            }
+            previousGameState = currentGameState;
+        }
 
-        // Dessiner le jeu
-        SDL_RenderClear(renderer);
-        drawLevel();
-        drawPlayer();
-        SDL_RenderPresent(renderer);
+        switch (currentGameState) {
+            case GAME_STATE_MENU:
+                handleMenuInput();
+                updateMenu();
+
+                SDL_RenderClear(renderer);
+                drawMenu();
+                SDL_RenderPresent(renderer);
+                break;
+
+            case GAME_STATE_PLAYING:
+                // Gérer les événements
+                handleInput();
+                // Mettre à jour le jeu
+                updatePlayer();
+
+                // Dessiner le jeu
+                SDL_RenderClear(renderer);
+                drawLevel();
+                drawPlayer();
+                SDL_RenderPresent(renderer);
+                break;
+
+            // Ajoutez d'autres cas si nécessaire
+        }
 
         // Contrôler le framerate
         SDL_Delay(16); // Environ 60 FPS
@@ -74,9 +103,13 @@ void gameLoop() {
 
 // Nettoie les ressources du jeu
 void cleanupGame() {
-    // Nettoyer les modules
-    cleanupPlayer();
-    cleanupLevel();
+    // Nettoyer les modules en fonction de l'état du jeu
+    if (currentGameState == GAME_STATE_PLAYING) {
+        cleanupPlayer();
+        cleanupLevel();
+    } else if (currentGameState == GAME_STATE_MENU) {
+        cleanupMenu();
+    }
 
     // Nettoyer SDL
     SDL_DestroyRenderer(renderer);

@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.2.3\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2024.2.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2"
+CMAKE_SOURCE_DIR = D:\ESGI\C\Projet-C-MYN\Projet_C_v2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\cmake-build-debug"
+CMAKE_BINARY_DIR = D:\ESGI\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Projet_C_v2.dir/depend.make
@@ -70,123 +70,123 @@ include CMakeFiles/Projet_C_v2.dir/flags.make
 
 CMakeFiles/Projet_C_v2.dir/src/game.c.obj: CMakeFiles/Projet_C_v2.dir/flags.make
 CMakeFiles/Projet_C_v2.dir/src/game.c.obj: CMakeFiles/Projet_C_v2.dir/includes_C.rsp
-CMakeFiles/Projet_C_v2.dir/src/game.c.obj: C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/game.c
+CMakeFiles/Projet_C_v2.dir/src/game.c.obj: D:/ESGI/C/Projet-C-MYN/Projet_C_v2/src/game.c
 CMakeFiles/Projet_C_v2.dir/src/game.c.obj: CMakeFiles/Projet_C_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Projet_C_v2.dir/src/game.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/game.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\game.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\game.c.obj -c "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\game.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ESGI\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Projet_C_v2.dir/src/game.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/game.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\game.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\game.c.obj -c D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\game.c
 
 CMakeFiles/Projet_C_v2.dir/src/game.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Projet_C_v2.dir/src/game.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\game.c" > CMakeFiles\Projet_C_v2.dir\src\game.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\game.c > CMakeFiles\Projet_C_v2.dir\src\game.c.i
 
 CMakeFiles/Projet_C_v2.dir/src/game.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Projet_C_v2.dir/src/game.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\game.c" -o CMakeFiles\Projet_C_v2.dir\src\game.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\game.c -o CMakeFiles\Projet_C_v2.dir\src\game.c.s
 
 CMakeFiles/Projet_C_v2.dir/src/graphics.c.obj: CMakeFiles/Projet_C_v2.dir/flags.make
 CMakeFiles/Projet_C_v2.dir/src/graphics.c.obj: CMakeFiles/Projet_C_v2.dir/includes_C.rsp
-CMakeFiles/Projet_C_v2.dir/src/graphics.c.obj: C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/graphics.c
+CMakeFiles/Projet_C_v2.dir/src/graphics.c.obj: D:/ESGI/C/Projet-C-MYN/Projet_C_v2/src/graphics.c
 CMakeFiles/Projet_C_v2.dir/src/graphics.c.obj: CMakeFiles/Projet_C_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Projet_C_v2.dir/src/graphics.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/graphics.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\graphics.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\graphics.c.obj -c "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\graphics.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ESGI\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Projet_C_v2.dir/src/graphics.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/graphics.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\graphics.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\graphics.c.obj -c D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\graphics.c
 
 CMakeFiles/Projet_C_v2.dir/src/graphics.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Projet_C_v2.dir/src/graphics.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\graphics.c" > CMakeFiles\Projet_C_v2.dir\src\graphics.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\graphics.c > CMakeFiles\Projet_C_v2.dir\src\graphics.c.i
 
 CMakeFiles/Projet_C_v2.dir/src/graphics.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Projet_C_v2.dir/src/graphics.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\graphics.c" -o CMakeFiles\Projet_C_v2.dir\src\graphics.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\graphics.c -o CMakeFiles\Projet_C_v2.dir\src\graphics.c.s
 
 CMakeFiles/Projet_C_v2.dir/src/input.c.obj: CMakeFiles/Projet_C_v2.dir/flags.make
 CMakeFiles/Projet_C_v2.dir/src/input.c.obj: CMakeFiles/Projet_C_v2.dir/includes_C.rsp
-CMakeFiles/Projet_C_v2.dir/src/input.c.obj: C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/input.c
+CMakeFiles/Projet_C_v2.dir/src/input.c.obj: D:/ESGI/C/Projet-C-MYN/Projet_C_v2/src/input.c
 CMakeFiles/Projet_C_v2.dir/src/input.c.obj: CMakeFiles/Projet_C_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Projet_C_v2.dir/src/input.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/input.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\input.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\input.c.obj -c "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\input.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ESGI\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Projet_C_v2.dir/src/input.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/input.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\input.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\input.c.obj -c D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\input.c
 
 CMakeFiles/Projet_C_v2.dir/src/input.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Projet_C_v2.dir/src/input.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\input.c" > CMakeFiles\Projet_C_v2.dir\src\input.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\input.c > CMakeFiles\Projet_C_v2.dir\src\input.c.i
 
 CMakeFiles/Projet_C_v2.dir/src/input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Projet_C_v2.dir/src/input.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\input.c" -o CMakeFiles\Projet_C_v2.dir\src\input.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\input.c -o CMakeFiles\Projet_C_v2.dir\src\input.c.s
 
 CMakeFiles/Projet_C_v2.dir/src/level.c.obj: CMakeFiles/Projet_C_v2.dir/flags.make
 CMakeFiles/Projet_C_v2.dir/src/level.c.obj: CMakeFiles/Projet_C_v2.dir/includes_C.rsp
-CMakeFiles/Projet_C_v2.dir/src/level.c.obj: C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/level.c
+CMakeFiles/Projet_C_v2.dir/src/level.c.obj: D:/ESGI/C/Projet-C-MYN/Projet_C_v2/src/level.c
 CMakeFiles/Projet_C_v2.dir/src/level.c.obj: CMakeFiles/Projet_C_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Projet_C_v2.dir/src/level.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/level.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\level.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\level.c.obj -c "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\level.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ESGI\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Projet_C_v2.dir/src/level.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/level.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\level.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\level.c.obj -c D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\level.c
 
 CMakeFiles/Projet_C_v2.dir/src/level.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Projet_C_v2.dir/src/level.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\level.c" > CMakeFiles\Projet_C_v2.dir\src\level.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\level.c > CMakeFiles\Projet_C_v2.dir\src\level.c.i
 
 CMakeFiles/Projet_C_v2.dir/src/level.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Projet_C_v2.dir/src/level.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\level.c" -o CMakeFiles\Projet_C_v2.dir\src\level.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\level.c -o CMakeFiles\Projet_C_v2.dir\src\level.c.s
 
 CMakeFiles/Projet_C_v2.dir/src/main.c.obj: CMakeFiles/Projet_C_v2.dir/flags.make
 CMakeFiles/Projet_C_v2.dir/src/main.c.obj: CMakeFiles/Projet_C_v2.dir/includes_C.rsp
-CMakeFiles/Projet_C_v2.dir/src/main.c.obj: C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/main.c
+CMakeFiles/Projet_C_v2.dir/src/main.c.obj: D:/ESGI/C/Projet-C-MYN/Projet_C_v2/src/main.c
 CMakeFiles/Projet_C_v2.dir/src/main.c.obj: CMakeFiles/Projet_C_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Projet_C_v2.dir/src/main.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/main.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\main.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\main.c.obj -c "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\main.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ESGI\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Projet_C_v2.dir/src/main.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/main.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\main.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\main.c.obj -c D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\main.c
 
 CMakeFiles/Projet_C_v2.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Projet_C_v2.dir/src/main.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\main.c" > CMakeFiles\Projet_C_v2.dir\src\main.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\main.c > CMakeFiles\Projet_C_v2.dir\src\main.c.i
 
 CMakeFiles/Projet_C_v2.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Projet_C_v2.dir/src/main.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\main.c" -o CMakeFiles\Projet_C_v2.dir\src\main.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\main.c -o CMakeFiles\Projet_C_v2.dir\src\main.c.s
 
 CMakeFiles/Projet_C_v2.dir/src/menu.c.obj: CMakeFiles/Projet_C_v2.dir/flags.make
 CMakeFiles/Projet_C_v2.dir/src/menu.c.obj: CMakeFiles/Projet_C_v2.dir/includes_C.rsp
-CMakeFiles/Projet_C_v2.dir/src/menu.c.obj: C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/menu.c
+CMakeFiles/Projet_C_v2.dir/src/menu.c.obj: D:/ESGI/C/Projet-C-MYN/Projet_C_v2/src/menu.c
 CMakeFiles/Projet_C_v2.dir/src/menu.c.obj: CMakeFiles/Projet_C_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Projet_C_v2.dir/src/menu.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/menu.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\menu.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\menu.c.obj -c "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\menu.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ESGI\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Projet_C_v2.dir/src/menu.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/menu.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\menu.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\menu.c.obj -c D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\menu.c
 
 CMakeFiles/Projet_C_v2.dir/src/menu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Projet_C_v2.dir/src/menu.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\menu.c" > CMakeFiles\Projet_C_v2.dir\src\menu.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\menu.c > CMakeFiles\Projet_C_v2.dir\src\menu.c.i
 
 CMakeFiles/Projet_C_v2.dir/src/menu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Projet_C_v2.dir/src/menu.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\menu.c" -o CMakeFiles\Projet_C_v2.dir\src\menu.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\menu.c -o CMakeFiles\Projet_C_v2.dir\src\menu.c.s
 
 CMakeFiles/Projet_C_v2.dir/src/player.c.obj: CMakeFiles/Projet_C_v2.dir/flags.make
 CMakeFiles/Projet_C_v2.dir/src/player.c.obj: CMakeFiles/Projet_C_v2.dir/includes_C.rsp
-CMakeFiles/Projet_C_v2.dir/src/player.c.obj: C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/player.c
+CMakeFiles/Projet_C_v2.dir/src/player.c.obj: D:/ESGI/C/Projet-C-MYN/Projet_C_v2/src/player.c
 CMakeFiles/Projet_C_v2.dir/src/player.c.obj: CMakeFiles/Projet_C_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Projet_C_v2.dir/src/player.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/player.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\player.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\player.c.obj -c "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\player.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ESGI\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Projet_C_v2.dir/src/player.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/player.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\player.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\player.c.obj -c D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\player.c
 
 CMakeFiles/Projet_C_v2.dir/src/player.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Projet_C_v2.dir/src/player.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\player.c" > CMakeFiles\Projet_C_v2.dir\src\player.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\player.c > CMakeFiles\Projet_C_v2.dir\src\player.c.i
 
 CMakeFiles/Projet_C_v2.dir/src/player.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Projet_C_v2.dir/src/player.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\player.c" -o CMakeFiles\Projet_C_v2.dir\src\player.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\player.c -o CMakeFiles\Projet_C_v2.dir\src\player.c.s
 
 CMakeFiles/Projet_C_v2.dir/src/utils.c.obj: CMakeFiles/Projet_C_v2.dir/flags.make
 CMakeFiles/Projet_C_v2.dir/src/utils.c.obj: CMakeFiles/Projet_C_v2.dir/includes_C.rsp
-CMakeFiles/Projet_C_v2.dir/src/utils.c.obj: C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/src/utils.c
+CMakeFiles/Projet_C_v2.dir/src/utils.c.obj: D:/ESGI/C/Projet-C-MYN/Projet_C_v2/src/utils.c
 CMakeFiles/Projet_C_v2.dir/src/utils.c.obj: CMakeFiles/Projet_C_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Projet_C_v2.dir/src/utils.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/utils.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\utils.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\utils.c.obj -c "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\utils.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ESGI\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Projet_C_v2.dir/src/utils.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/utils.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\utils.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\utils.c.obj -c D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\utils.c
 
 CMakeFiles/Projet_C_v2.dir/src/utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Projet_C_v2.dir/src/utils.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\utils.c" > CMakeFiles\Projet_C_v2.dir\src\utils.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\utils.c > CMakeFiles\Projet_C_v2.dir\src\utils.c.i
 
 CMakeFiles/Projet_C_v2.dir/src/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Projet_C_v2.dir/src/utils.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\src\utils.c" -o CMakeFiles\Projet_C_v2.dir\src\utils.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\utils.c -o CMakeFiles\Projet_C_v2.dir\src\utils.c.s
 
 # Object files for target Projet_C_v2
 Projet_C_v2_OBJECTS = \
@@ -211,14 +211,14 @@ Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/src/menu.c.obj
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/src/player.c.obj
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/src/utils.c.obj
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/build.make
-Projet_C_v2.exe: C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/lib/libSDL2main.a
-Projet_C_v2.exe: C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/lib/libSDL2.dll.a
-Projet_C_v2.exe: C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/lib/libSDL2_image.dll.a
-Projet_C_v2.exe: C:/Users/mathi/Esgi/2eme\ annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/lib/libSDL2_ttf.dll.a
+Projet_C_v2.exe: D:/ESGI/C/Projet-C-MYN/Projet_C_v2/lib/libSDL2main.a
+Projet_C_v2.exe: D:/ESGI/C/Projet-C-MYN/Projet_C_v2/lib/libSDL2.dll.a
+Projet_C_v2.exe: D:/ESGI/C/Projet-C-MYN/Projet_C_v2/lib/libSDL2_image.dll.a
+Projet_C_v2.exe: D:/ESGI/C/Projet-C-MYN/Projet_C_v2/lib/libSDL2_ttf.dll.a
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/linkLibs.rsp
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/objects1.rsp
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable Projet_C_v2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\ESGI\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable Projet_C_v2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Projet_C_v2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -230,6 +230,6 @@ CMakeFiles/Projet_C_v2.dir/clean:
 .PHONY : CMakeFiles/Projet_C_v2.dir/clean
 
 CMakeFiles/Projet_C_v2.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2" "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2" "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\cmake-build-debug" "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\cmake-build-debug" "C:\Users\mathi\Esgi\2eme annee\C\Projet_semestre1\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles\Projet_C_v2.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\ESGI\C\Projet-C-MYN\Projet_C_v2 D:\ESGI\C\Projet-C-MYN\Projet_C_v2 D:\ESGI\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug D:\ESGI\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug D:\ESGI\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles\Projet_C_v2.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Projet_C_v2.dir/depend
 
