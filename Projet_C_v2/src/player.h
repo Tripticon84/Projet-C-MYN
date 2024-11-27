@@ -9,17 +9,12 @@
 
 // Dimensions du joueur
 #define PLAYER_WIDTH 13
-#define PLAYER_HEIGHT 19
+#define PLAYER_HEIGHT 18
 #define PLAYER_SCALE 2
 
-<<<<<<< HEAD
-// Ajoutez ces définitions pour l'espacement entre les frame du player
-#define PLAYER_SPACE_X 19 // Espacement horizontal entre les les frame de player en pixels
-=======
 // Ajoutez ces définitions pour l'espacement entre les tuiles
 #define PLAYER_SPACE_X 19 // Espacement horizontal entre les tuiles en pixels
 #define PLAYER_SPACE_Y 0  // Espacement vertical entre les tuiles en pixels
->>>>>>> origin/main
 
 // Constantes pour les animations
 #define PLAYER_ANIM_FRAMES 4 // Nombre de frames par animation
@@ -45,6 +40,7 @@ typedef struct {
     int velocityX;
     int velocityY;
     int onGround;
+    int hasKey; // Le joueur a-t-il la clé ?
     // Variables pour l'animation
     int frame;
     int frameTimer;
