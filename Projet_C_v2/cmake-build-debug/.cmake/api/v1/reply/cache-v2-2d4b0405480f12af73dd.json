@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/ESGI/C/Projet-C-MYN/Projet_C_v2/cmake-build-debug"
+			"value" : "c:/Users/priss/Documents/2eme annee/C/Projet-C-MYN/Projet_C_v2/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/ESGI/C/Projet-C-MYN/Projet_C_v2/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/priss/Documents/2eme annee/C/Projet-C-MYN/Projet_C_v2/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -503,7 +503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/ESGI/C/Projet-C-MYN/Projet_C_v2"
+			"value" : "C:/Users/priss/Documents/2eme annee/C/Projet-C-MYN/Projet_C_v2"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -547,7 +547,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe"
+			"value" : "C:/PROGRA~1/JETBRA~1/CLION2~2.2/bin/mingw/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1139,7 +1139,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/ESGI/C/Projet-C-MYN/Projet_C_v2/cmake-build-debug"
+			"value" : "C:/Users/priss/Documents/2eme annee/C/Projet-C-MYN/Projet_C_v2/cmake-build-debug"
 		},
 		{
 			"name" : "Projet_C_v2_IS_TOP_LEVEL",
@@ -1163,7 +1163,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/ESGI/C/Projet-C-MYN/Projet_C_v2"
+			"value" : "C:/Users/priss/Documents/2eme annee/C/Projet-C-MYN/Projet_C_v2"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

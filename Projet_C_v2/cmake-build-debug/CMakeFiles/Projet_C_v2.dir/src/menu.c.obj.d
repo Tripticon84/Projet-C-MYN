@@ -1,14 +1,14 @@
 CMakeFiles/Projet_C_v2.dir/src/menu.c.obj: \
- D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\menu.c \
- D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\menu.h \
- D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\graphics.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_main.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_stdinc.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_config.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_platform.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/begin_code.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/close_code.h \
+ C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\menu.c \
+ C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\menu.h \
+ C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\graphics.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_main.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_stdinc.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_config.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_platform.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/begin_code.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/close_code.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/winsdkver.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/winapifamily.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/sdkddkver.h \
@@ -26,20 +26,20 @@ CMakeFiles/Projet_C_v2.dir/src/menu.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_stdarg.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_assert.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_atomic.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_audio.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_error.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_endian.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_mutex.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_thread.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_assert.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_atomic.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_audio.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_error.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_endian.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_mutex.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_thread.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/process.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_rwops.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_clipboard.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_cpuinfo.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_rwops.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_clipboard.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_cpuinfo.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/intrin.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/setjmp.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
@@ -151,49 +151,49 @@ CMakeFiles/Projet_C_v2.dir/src/menu.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/ammintrin.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xopintrin.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cpuid.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_events.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_video.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_pixels.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_rect.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_surface.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_blendmode.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_keyboard.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_keycode.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_scancode.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_mouse.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_joystick.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_guid.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_gamecontroller.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_sensor.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_quit.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_gesture.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_touch.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_filesystem.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_haptic.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_hidapi.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_hints.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_loadso.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_log.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_messagebox.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_metal.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_power.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_render.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_shape.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_system.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_timer.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_version.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_locale.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_misc.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_image.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_events.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_video.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_pixels.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_rect.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_surface.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_blendmode.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_keyboard.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_keycode.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_scancode.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_mouse.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_joystick.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_guid.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_gamecontroller.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_sensor.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_quit.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_gesture.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_touch.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_filesystem.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_haptic.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_hidapi.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_hints.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_loadso.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_log.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_messagebox.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_metal.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_power.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_render.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_shape.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_system.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_timer.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_version.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_locale.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_misc.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_image.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\utils.h \
+ C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\utils.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/math.h \
- D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\game.h \
- D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\level.h \
- D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\player.h \
- D:\ESGI\C\Projet-C-MYN\Projet_C_v2\src\input.h \
- D:/ESGI/C/Projet-C-MYN/Projet_C_v2/include/SDL2/SDL_ttf.h
+ C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\game.h \
+ C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\level.h \
+ C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\player.h \
+ C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\input.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_ttf.h
