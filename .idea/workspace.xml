@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a6f5b117-2e29-4de4-a6ac-9aae693d56a9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/.cmake/api/v1/reply/cache-v2-30ba6549590c67a06c23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-42068d038b139d56c709.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-079765f75fe32470d1be.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/.cmake/api/v1/reply/index-2024-11-24T21-24-22-0293.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/.cmake/api/v1/reply/target-Projet_C_v2-Debug-91ba07e32ec714169f3c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/compiler_depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/includes_C.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/includes_C.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/linkLibs.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/linkLibs.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/game.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/game.c.obj.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/graphics.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/graphics.c.obj.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/input.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/input.c.obj.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/level.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/level.c.obj.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/main.c.obj.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/menu.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/menu.c.obj.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/player.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/player.c.obj.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/utils.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir/src/utils.c.obj.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_C_v2/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2pJgKhxnZSeCY7cxKcjNzrndfXc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/priss/Documents/2eme annee/C/Projet-C-MYN/Projet_C_v2",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a6f5b117-2e29-4de4-a6ac-9aae693d56a9" name="Changes" comment="" />
+      <created>1732489529461</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732489529461</updated>
+      <workItem from="1732489530588" duration="44000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
