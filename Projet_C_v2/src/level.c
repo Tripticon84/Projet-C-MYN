@@ -18,7 +18,9 @@ typedef struct {
 TileMapping tileMappings[] = {
         {'#', 5},  // Bloc solide
         {'K', 27}, // Clé
-        {'D', 28}, // Porte
+        {'D', 212}, // Porte fermée
+        {'O', 232}, // Porte ouverte (nouvelle tuile)
+        {'S', 68}, // Pics (nouvelle tuile)
         // Ajoutez d'autres mappings si nécessaire
 };
 
@@ -105,6 +107,13 @@ void drawLevel() {
                 SDL_RenderCopy(renderer, tilesetTexture, &srcRect, &destRect);
             }
         }
+    }
+}
+
+// Fonction pour mettre à jour une tuile du niveau
+void setTileAt(int x, int y, char tileChar) {
+    if (x >= 0 && x < LEVEL_WIDTH && y >= 0 && y < LEVEL_HEIGHT) {
+        levelData[y][x] = tileChar;
     }
 }
 
