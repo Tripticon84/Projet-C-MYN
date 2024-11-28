@@ -9,7 +9,7 @@
 
 // Dimensions du joueur
 #define PLAYER_WIDTH 13
-#define PLAYER_HEIGHT 18
+#define PLAYER_HEIGHT 19
 #define PLAYER_SCALE 2
 
 // Ajoutez ces définitions pour l'espacement entre les tuiles
@@ -40,7 +40,6 @@ typedef struct {
     int velocityX;
     int velocityY;
     int onGround;
-    int hasKey; // Le joueur a-t-il la clé ?
     // Variables pour l'animation
     int frame;
     int frameTimer;
