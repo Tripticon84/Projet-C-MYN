@@ -18,8 +18,8 @@ typedef struct {
 TileMapping tileMappings[] = {
         {'#', 5},  // Bloc solide
         {'K', 27}, // Clé
-        {'D', 28}, // Porte fermée
-        {'O', 29}, // Porte ouverte (nouvelle tuile)
+        {'D', 212}, // Porte fermée
+        {'O', 232}, // Porte ouverte (nouvelle tuile)
         {'S', 68}, // Pics (nouvelle tuile)
         // Ajoutez d'autres mappings si nécessaire
 };
