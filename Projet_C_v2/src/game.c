@@ -7,6 +7,8 @@ SDL_Window* window = NULL;
 SDL_Renderer* renderer = NULL;
 int running = 1;
 GameState currentGameState = GAME_STATE_MENU;
+int currentLevel = 1; // Niveau actuel
+
 
 // Initialise le jeu
 int initGame() {
