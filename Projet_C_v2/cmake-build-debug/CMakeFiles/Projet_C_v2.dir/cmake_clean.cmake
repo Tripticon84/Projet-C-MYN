@@ -13,8 +13,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Projet_C_v2.dir/src/menu.c.obj.d"
   "CMakeFiles/Projet_C_v2.dir/src/player.c.obj"
   "CMakeFiles/Projet_C_v2.dir/src/player.c.obj.d"
-  "CMakeFiles/Projet_C_v2.dir/src/utils.c.obj"
-  "CMakeFiles/Projet_C_v2.dir/src/utils.c.obj.d"
   "Projet_C_v2.exe"
   "Projet_C_v2.exe.manifest"
   "Projet_C_v2.pdb"

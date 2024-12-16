@@ -8,23 +8,23 @@ char levelData[LEVEL_HEIGHT][LEVEL_WIDTH + 2]; // +2 pour '\n' et '\0'
 // Texture pour le tileset
 SDL_Texture* tilesetTexture = NULL;
 
-// Structure de correspondance des tuiles
+
 typedef struct {
     char tileChar; // Caractère dans le fichier de niveau
     int tileIndex; // Index de la tuile dans le tileset
 } TileMapping;
 
-// Tableau de correspondance des tuiles
+// Tableau des tuiles
 TileMapping tileMappings[] = {
         {'#', 5},  // Bloc solide
         {'K', 27}, // Clé
         {'D', 212}, // Porte fermée
-        {'O', 232}, // Porte ouverte (nouvelle tuile)
-        {'S', 68}, // Pics (nouvelle tuile)
-        // Ajoutez d'autres mappings si nécessaire
+        {'O', 232}, // Porte ouverte
+        {'S', 68}, // Pics
+
 };
 
-// Nombre de correspondances
+// Nombre de blocs
 #define TILE_MAPPING_COUNT (sizeof(tileMappings) / sizeof(TileMapping))
 
 // Fonction pour obtenir le rectangle source d'une tuile dans le tileset
@@ -60,7 +60,7 @@ SDL_Rect getTileSrcRect(char tileChar) {
 
 // Fonction pour charger un niveau depuis un fichier
 void loadLevel(const char* filename) {
-    // Charger la texture du tileset
+    // charge la texture du tileset
     tilesetTexture = loadTexture("../assets/images/tilemap.png");
     if (!tilesetTexture) {
         printf("Erreur lors du chargement du tileset.\n");

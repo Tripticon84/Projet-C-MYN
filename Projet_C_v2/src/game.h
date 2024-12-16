@@ -7,7 +7,6 @@
 #include "level.h"
 #include "player.h"
 #include "input.h"
-#include "utils.h"
 #include "menu.h"
 
 // Déclaration des variables globales

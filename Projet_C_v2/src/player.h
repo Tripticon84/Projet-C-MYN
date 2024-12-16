@@ -4,7 +4,7 @@
 #define PLAYER_H
 
 #include "graphics.h"
-#include "utils.h"
+
 #include "level.h"
 
 // Dimensions du joueur
@@ -24,7 +24,6 @@
 typedef enum {
     PLAYER_STATE_IDLE,
     PLAYER_STATE_WALKING,
-    // Ajoutez d'autres états si nécessaire
 } PlayerState;
 
 // Directions du joueur
@@ -40,7 +39,8 @@ typedef struct {
     int velocityX;
     int velocityY;
     int onGround;
-    int hasKey; // Le joueur a-t-il la clé ?
+    int hasKey;
+
     // Variables pour l'animation
     int frame;
     int frameTimer;
