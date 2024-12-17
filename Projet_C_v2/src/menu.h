@@ -2,7 +2,7 @@
 #define MENU_H
 
 #include "graphics.h"
-#include "utils.h"
+
 #include <SDL.h>
 
 // Structure pour un bouton

@@ -4,12 +4,12 @@
 #define PLAYER_H
 
 #include "graphics.h"
-#include "utils.h"
+
 #include "level.h"
 
 // Dimensions du joueur
 #define PLAYER_WIDTH 13
-#define PLAYER_HEIGHT 19
+#define PLAYER_HEIGHT 18
 #define PLAYER_SCALE 2
 
 // Ajoutez ces définitions pour l'espacement entre les tuiles
@@ -24,7 +24,6 @@
 typedef enum {
     PLAYER_STATE_IDLE,
     PLAYER_STATE_WALKING,
-    // Ajoutez d'autres états si nécessaire
 } PlayerState;
 
 // Directions du joueur
@@ -40,6 +39,8 @@ typedef struct {
     int velocityX;
     int velocityY;
     int onGround;
+    int hasKey;
+
     // Variables pour l'animation
     int frame;
     int frameTimer;

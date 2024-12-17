@@ -4,7 +4,7 @@
 #define LEVEL_H
 
 #include "graphics.h"
-#include "utils.h"
+
 
 // Dimensions du niveau
 #define LEVEL_WIDTH 22
@@ -22,6 +22,7 @@
 void loadLevel(const char* filename);
 void drawLevel();
 void cleanupLevel();
+void setTileAt(int x, int y, char tileChar); // Ajout de la déclaration
 
 // Accès global aux données du niveau
 extern char levelData[LEVEL_HEIGHT][LEVEL_WIDTH + 2];
