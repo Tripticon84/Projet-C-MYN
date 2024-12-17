@@ -24,6 +24,11 @@
 typedef enum {
     PLAYER_STATE_IDLE,
     PLAYER_STATE_WALKING,
+<<<<<<< Updated upstream
+=======
+    PLAYER_STATE_JUMPING,
+    // Ajoutez d'autres états si nécessaire
+>>>>>>> Stashed changes
 } PlayerState;
 
 // Directions du joueur

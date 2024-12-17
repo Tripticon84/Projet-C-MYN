@@ -62,7 +62,9 @@ void updatePlayer() {
     } else if (player.velocityX < 0) {
         player.direction = PLAYER_DIRECTION_LEFT;
         player.state = PLAYER_STATE_WALKING;
-    } else {
+    }else if (player.velocityY > 0) {
+        player.state = PLAYER_STATE_JUMPING;
+    }else {
         player.state = PLAYER_STATE_IDLE;
     }
 
@@ -103,6 +105,11 @@ static void updatePlayerAnimation() {
     } else if (player.state == PLAYER_STATE_IDLE) {
         player.frame = 0;
         player.frameTimer = 0;
+    }else if (player.state == PLAYER_STATE_JUMPING) {
+        if (player.frameTimer >= player.frameDuration) {
+            player.frameTimer = 0;
+            player.frame = (player.frame + 2) % PLAYER_ANIM_FRAMES;;
+        }
     }
 }
 

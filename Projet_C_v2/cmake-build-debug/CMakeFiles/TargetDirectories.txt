@@ -1,3 +1,9 @@
+<<<<<<< Updated upstream
 D:/ESGI/C/Projet-C-MYN/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir
 D:/ESGI/C/Projet-C-MYN/Projet_C_v2/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/ESGI/C/Projet-C-MYN/Projet_C_v2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+=======
+C:/Users/mathi/Esgi/2eme annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/cmake-build-debug/CMakeFiles/Projet_C_v2.dir
+C:/Users/mathi/Esgi/2eme annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mathi/Esgi/2eme annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+>>>>>>> Stashed changes
