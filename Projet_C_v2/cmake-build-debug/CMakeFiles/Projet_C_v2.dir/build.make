@@ -158,11 +158,26 @@ CMakeFiles/Projet_C_v2.dir/src/menu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Projet_C_v2.dir/src/menu.c.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~2.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\src\menu.c" -o CMakeFiles\Projet_C_v2.dir\src\menu.c.s
 
+CMakeFiles/Projet_C_v2.dir/src/music.c.obj: CMakeFiles/Projet_C_v2.dir/flags.make
+CMakeFiles/Projet_C_v2.dir/src/music.c.obj: CMakeFiles/Projet_C_v2.dir/includes_C.rsp
+CMakeFiles/Projet_C_v2.dir/src/music.c.obj: C:/Users/priss/Documents/2eme\ annee/C/Projet-C-MYN/Projet_C_v2/src/music.c
+CMakeFiles/Projet_C_v2.dir/src/music.c.obj: CMakeFiles/Projet_C_v2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Projet_C_v2.dir/src/music.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~2.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/music.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\music.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\music.c.obj -c "C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\src\music.c"
+
+CMakeFiles/Projet_C_v2.dir/src/music.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Projet_C_v2.dir/src/music.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~2.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\src\music.c" > CMakeFiles\Projet_C_v2.dir\src\music.c.i
+
+CMakeFiles/Projet_C_v2.dir/src/music.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Projet_C_v2.dir/src/music.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~2.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\src\music.c" -o CMakeFiles\Projet_C_v2.dir\src\music.c.s
+
 CMakeFiles/Projet_C_v2.dir/src/player.c.obj: CMakeFiles/Projet_C_v2.dir/flags.make
 CMakeFiles/Projet_C_v2.dir/src/player.c.obj: CMakeFiles/Projet_C_v2.dir/includes_C.rsp
 CMakeFiles/Projet_C_v2.dir/src/player.c.obj: C:/Users/priss/Documents/2eme\ annee/C/Projet-C-MYN/Projet_C_v2/src/player.c
 CMakeFiles/Projet_C_v2.dir/src/player.c.obj: CMakeFiles/Projet_C_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Projet_C_v2.dir/src/player.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Projet_C_v2.dir/src/player.c.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~2.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/player.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\player.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\player.c.obj -c "C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\src\player.c"
 
 CMakeFiles/Projet_C_v2.dir/src/player.c.i: cmake_force
@@ -173,11 +188,26 @@ CMakeFiles/Projet_C_v2.dir/src/player.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Projet_C_v2.dir/src/player.c.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~2.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\src\player.c" -o CMakeFiles\Projet_C_v2.dir\src\player.c.s
 
+CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.obj: CMakeFiles/Projet_C_v2.dir/flags.make
+CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.obj: CMakeFiles/Projet_C_v2.dir/includes_C.rsp
+CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.obj: C:/Users/priss/Documents/2eme\ annee/C/Projet-C-MYN/Projet_C_v2/src/settings_menu.c
+CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.obj: CMakeFiles/Projet_C_v2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~2.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\settings_menu.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\settings_menu.c.obj -c "C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\src\settings_menu.c"
+
+CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~2.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\src\settings_menu.c" > CMakeFiles\Projet_C_v2.dir\src\settings_menu.c.i
+
+CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~2.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\src\settings_menu.c" -o CMakeFiles\Projet_C_v2.dir\src\settings_menu.c.s
+
 CMakeFiles/Projet_C_v2.dir/src/utils.c.obj: CMakeFiles/Projet_C_v2.dir/flags.make
 CMakeFiles/Projet_C_v2.dir/src/utils.c.obj: CMakeFiles/Projet_C_v2.dir/includes_C.rsp
 CMakeFiles/Projet_C_v2.dir/src/utils.c.obj: C:/Users/priss/Documents/2eme\ annee/C/Projet-C-MYN/Projet_C_v2/src/utils.c
 CMakeFiles/Projet_C_v2.dir/src/utils.c.obj: CMakeFiles/Projet_C_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Projet_C_v2.dir/src/utils.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Projet_C_v2.dir/src/utils.c.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~2.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Projet_C_v2.dir/src/utils.c.obj -MF CMakeFiles\Projet_C_v2.dir\src\utils.c.obj.d -o CMakeFiles\Projet_C_v2.dir\src\utils.c.obj -c "C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\src\utils.c"
 
 CMakeFiles/Projet_C_v2.dir/src/utils.c.i: cmake_force
@@ -196,7 +226,9 @@ Projet_C_v2_OBJECTS = \
 "CMakeFiles/Projet_C_v2.dir/src/level.c.obj" \
 "CMakeFiles/Projet_C_v2.dir/src/main.c.obj" \
 "CMakeFiles/Projet_C_v2.dir/src/menu.c.obj" \
+"CMakeFiles/Projet_C_v2.dir/src/music.c.obj" \
 "CMakeFiles/Projet_C_v2.dir/src/player.c.obj" \
+"CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.obj" \
 "CMakeFiles/Projet_C_v2.dir/src/utils.c.obj"
 
 # External object files for target Projet_C_v2
@@ -208,7 +240,9 @@ Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/src/input.c.obj
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/src/level.c.obj
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/src/main.c.obj
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/src/menu.c.obj
+Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/src/music.c.obj
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/src/player.c.obj
+Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.obj
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/src/utils.c.obj
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/build.make
 Projet_C_v2.exe: C:/Users/priss/Documents/2eme\ annee/C/Projet-C-MYN/Projet_C_v2/lib/libSDL2main.a
@@ -219,7 +253,7 @@ Projet_C_v2.exe: C:/Users/priss/Documents/2eme\ annee/C/Projet-C-MYN/Projet_C_v2
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/linkLibs.rsp
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/objects1.rsp
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable Projet_C_v2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\priss\Documents\2eme annee\C\Projet-C-MYN\Projet_C_v2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable Projet_C_v2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Projet_C_v2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

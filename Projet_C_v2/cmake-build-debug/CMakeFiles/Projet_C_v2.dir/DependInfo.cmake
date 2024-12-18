@@ -14,7 +14,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/priss/Documents/2eme annee/C/Projet-C-MYN/Projet_C_v2/src/level.c" "CMakeFiles/Projet_C_v2.dir/src/level.c.obj" "gcc" "CMakeFiles/Projet_C_v2.dir/src/level.c.obj.d"
   "C:/Users/priss/Documents/2eme annee/C/Projet-C-MYN/Projet_C_v2/src/main.c" "CMakeFiles/Projet_C_v2.dir/src/main.c.obj" "gcc" "CMakeFiles/Projet_C_v2.dir/src/main.c.obj.d"
   "C:/Users/priss/Documents/2eme annee/C/Projet-C-MYN/Projet_C_v2/src/menu.c" "CMakeFiles/Projet_C_v2.dir/src/menu.c.obj" "gcc" "CMakeFiles/Projet_C_v2.dir/src/menu.c.obj.d"
+  "C:/Users/priss/Documents/2eme annee/C/Projet-C-MYN/Projet_C_v2/src/music.c" "CMakeFiles/Projet_C_v2.dir/src/music.c.obj" "gcc" "CMakeFiles/Projet_C_v2.dir/src/music.c.obj.d"
   "C:/Users/priss/Documents/2eme annee/C/Projet-C-MYN/Projet_C_v2/src/player.c" "CMakeFiles/Projet_C_v2.dir/src/player.c.obj" "gcc" "CMakeFiles/Projet_C_v2.dir/src/player.c.obj.d"
+  "C:/Users/priss/Documents/2eme annee/C/Projet-C-MYN/Projet_C_v2/src/settings_menu.c" "CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.obj" "gcc" "CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.obj.d"
   "C:/Users/priss/Documents/2eme annee/C/Projet-C-MYN/Projet_C_v2/src/utils.c" "CMakeFiles/Projet_C_v2.dir/src/utils.c.obj" "gcc" "CMakeFiles/Projet_C_v2.dir/src/utils.c.obj.d"
   )
 

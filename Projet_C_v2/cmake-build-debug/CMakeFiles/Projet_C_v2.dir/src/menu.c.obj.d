@@ -191,11 +191,12 @@ CMakeFiles/Projet_C_v2.dir/src/menu.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
  C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\utils.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/math.h \
  C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\game.h \
  C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\level.h \
  C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\player.h \
  C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\input.h \
+ C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\settings_menu.h \
+ C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\music.h \
  C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2_M~1/SDL_mixer.h \
  C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_stdinc.h \
  C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_rwops.h \

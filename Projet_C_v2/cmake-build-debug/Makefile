@@ -272,6 +272,30 @@ src/menu.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projet_C_v2.dir\build.make CMakeFiles/Projet_C_v2.dir/src/menu.c.s
 .PHONY : src/menu.c.s
 
+src/music.obj: src/music.c.obj
+.PHONY : src/music.obj
+
+# target to build an object file
+src/music.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projet_C_v2.dir\build.make CMakeFiles/Projet_C_v2.dir/src/music.c.obj
+.PHONY : src/music.c.obj
+
+src/music.i: src/music.c.i
+.PHONY : src/music.i
+
+# target to preprocess a source file
+src/music.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projet_C_v2.dir\build.make CMakeFiles/Projet_C_v2.dir/src/music.c.i
+.PHONY : src/music.c.i
+
+src/music.s: src/music.c.s
+.PHONY : src/music.s
+
+# target to generate assembly for a file
+src/music.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projet_C_v2.dir\build.make CMakeFiles/Projet_C_v2.dir/src/music.c.s
+.PHONY : src/music.c.s
+
 src/player.obj: src/player.c.obj
 .PHONY : src/player.obj
 
@@ -295,6 +319,30 @@ src/player.s: src/player.c.s
 src/player.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projet_C_v2.dir\build.make CMakeFiles/Projet_C_v2.dir/src/player.c.s
 .PHONY : src/player.c.s
+
+src/settings_menu.obj: src/settings_menu.c.obj
+.PHONY : src/settings_menu.obj
+
+# target to build an object file
+src/settings_menu.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projet_C_v2.dir\build.make CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.obj
+.PHONY : src/settings_menu.c.obj
+
+src/settings_menu.i: src/settings_menu.c.i
+.PHONY : src/settings_menu.i
+
+# target to preprocess a source file
+src/settings_menu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projet_C_v2.dir\build.make CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.i
+.PHONY : src/settings_menu.c.i
+
+src/settings_menu.s: src/settings_menu.c.s
+.PHONY : src/settings_menu.s
+
+# target to generate assembly for a file
+src/settings_menu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projet_C_v2.dir\build.make CMakeFiles/Projet_C_v2.dir/src/settings_menu.c.s
+.PHONY : src/settings_menu.c.s
 
 src/utils.obj: src/utils.c.obj
 .PHONY : src/utils.obj
@@ -347,9 +395,15 @@ help:
 	@echo ... src/menu.obj
 	@echo ... src/menu.i
 	@echo ... src/menu.s
+	@echo ... src/music.obj
+	@echo ... src/music.i
+	@echo ... src/music.s
 	@echo ... src/player.obj
 	@echo ... src/player.i
 	@echo ... src/player.s
+	@echo ... src/settings_menu.obj
+	@echo ... src/settings_menu.i
+	@echo ... src/settings_menu.s
 	@echo ... src/utils.obj
 	@echo ... src/utils.i
 	@echo ... src/utils.s
