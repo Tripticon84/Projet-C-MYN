@@ -9,6 +9,7 @@
 #include "input.h"
 #include "menu.h"
 
+
 // Déclaration des variables globales
 extern SDL_Window* window;
 extern SDL_Renderer* renderer;
