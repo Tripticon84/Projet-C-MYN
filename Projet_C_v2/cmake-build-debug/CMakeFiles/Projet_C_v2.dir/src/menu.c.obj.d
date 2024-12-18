@@ -196,4 +196,12 @@ CMakeFiles/Projet_C_v2.dir/src/menu.c.obj: \
  C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\level.h \
  C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\player.h \
  C:\Users\priss\Documents\2eme\ annee\C\Projet-C-MYN\Projet_C_v2\src\input.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2_M~1/SDL_mixer.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_stdinc.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_rwops.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_audio.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_endian.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_version.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/begin_code.h \
+ C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/close_code.h \
  C:/Users/priss/DOCUME~1/2EMEAN~1/C/PROJET~1/PROJET~1/include/SDL2/SDL_ttf.h

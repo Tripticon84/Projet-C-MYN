@@ -215,6 +215,7 @@ Projet_C_v2.exe: C:/Users/priss/Documents/2eme\ annee/C/Projet-C-MYN/Projet_C_v2
 Projet_C_v2.exe: C:/Users/priss/Documents/2eme\ annee/C/Projet-C-MYN/Projet_C_v2/lib/libSDL2.dll.a
 Projet_C_v2.exe: C:/Users/priss/Documents/2eme\ annee/C/Projet-C-MYN/Projet_C_v2/lib/libSDL2_image.dll.a
 Projet_C_v2.exe: C:/Users/priss/Documents/2eme\ annee/C/Projet-C-MYN/Projet_C_v2/lib/libSDL2_ttf.dll.a
+Projet_C_v2.exe: C:/Users/priss/Documents/2eme\ annee/C/Projet-C-MYN/Projet_C_v2/lib/libSDL2_mixer.dll.a
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/linkLibs.rsp
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/objects1.rsp
 Projet_C_v2.exe: CMakeFiles/Projet_C_v2.dir/link.txt

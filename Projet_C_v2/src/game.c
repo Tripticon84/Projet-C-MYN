@@ -9,6 +9,8 @@ int running = 1;
 GameState currentGameState = GAME_STATE_MENU;
 int currentLevel = 1; // Niveau actuel
 
+// Déclarer backgroundMusic en variable globale
+static Mix_Music* backgroundMusic = NULL;
 
 // Initialise le jeu
 int initGame() {
@@ -23,6 +25,24 @@ int initGame() {
         printf("Erreur lors de l'initialisation de SDL_image: %s\n", IMG_GetError());
         SDL_Quit();
         return 1;
+    }
+
+    if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) < 0) {
+        printf("Erreur lors de l'initialisation de SDL_mixer: %s\n", Mix_GetError());
+        return 1;
+    }
+
+    int mixFlags = MIX_INIT_OGG | MIX_INIT_MP3;
+    if ((Mix_Init(mixFlags) & mixFlags) != mixFlags) {
+        printf("Erreur lors de l'initialisation de SDL_mixer (formats): %s\n", Mix_GetError());
+        // Pas bloquant, mais attention
+    }
+
+    backgroundMusic = Mix_LoadMUS("../assets/music/background.mp3");
+    if (!backgroundMusic) {
+        printf("Erreur lors du chargement de la musique: %s\n", Mix_GetError());
+    } else {
+        Mix_PlayMusic(backgroundMusic, -1);
     }
 
     // Créer la fenêtre
@@ -95,7 +115,7 @@ void gameLoop() {
                 SDL_RenderPresent(renderer);
                 break;
 
-            // Ajoutez d'autres cas si nécessaire
+                // Ajoutez d'autres cas si nécessaire
         }
 
         // Contrôler le framerate
@@ -112,6 +132,16 @@ void cleanupGame() {
     } else if (currentGameState == GAME_STATE_MENU) {
         cleanupMenu();
     }
+
+    // Arrêter et libérer la musique
+    Mix_HaltMusic();
+    if (backgroundMusic) {
+        Mix_FreeMusic(backgroundMusic);
+        backgroundMusic = NULL;
+    }
+
+    Mix_CloseAudio();
+    Mix_Quit();
 
     // Nettoyer SDL
     SDL_DestroyRenderer(renderer);

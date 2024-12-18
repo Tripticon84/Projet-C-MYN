@@ -9,6 +9,7 @@
 #include "input.h"
 #include "utils.h"
 #include "menu.h"
+#include <SDL_mixer.h>
 
 // Déclaration des variables globales
 extern SDL_Window* window;
