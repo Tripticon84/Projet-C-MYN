@@ -1,5 +1,0 @@
-<<<<<<< Updated upstream
- -lmingw32 "D:/ESGI/C/Projet-C-MYN/Projet_C_v2/lib/libSDL2main.a" "D:/ESGI/C/Projet-C-MYN/Projet_C_v2/lib/libSDL2.dll.a" "D:/ESGI/C/Projet-C-MYN/Projet_C_v2/lib/libSDL2_image.dll.a" "D:/ESGI/C/Projet-C-MYN/Projet_C_v2/lib/libSDL2_ttf.dll.a" -lm -mwindows -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-=======
- -lmingw32 "C:/Users/mathi/Esgi/2eme annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/lib/libSDL2main.a" "C:/Users/mathi/Esgi/2eme annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/lib/libSDL2.dll.a" "C:/Users/mathi/Esgi/2eme annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/lib/libSDL2_image.dll.a" "C:/Users/mathi/Esgi/2eme annee/C/Projet_semestre1/Projet-C-MYN/Projet_C_v2/lib/libSDL2_ttf.dll.a" -lm -mwindows -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
->>>>>>> Stashed changes
