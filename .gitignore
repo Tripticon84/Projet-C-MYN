@@ -1,3 +1,7 @@
-cmake-build-debug/
-build/
-.idea/
+Projet_C_v2/cmake-build-debug/*
+!Projet_C_v2/cmake-build-debug/SDL2_mixer.dll
+!Projet_C_v2/cmake-build-debug/SDL2_image.dll
+!Projet_C_v2/cmake-build-debug/SDL2_ttf.dll
+!Projet_C_v2/cmake-build-debug/SDL2.dll
+Projet_C_v2/build/
+Projet_C_v2/.idea/
