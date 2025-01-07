@@ -4,7 +4,7 @@
 #define LEVEL_H
 
 #include "graphics.h"
-#include "utils.h"
+
 
 // Dimensions du niveau
 #define LEVEL_WIDTH 22
