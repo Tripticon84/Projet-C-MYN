@@ -12,7 +12,7 @@
 #define PLAYER_HEIGHT 18
 #define PLAYER_SCALE 2
 
-// Ajoutez ces définitions pour l'espacement entre les tuiles
+// Définition de l'espacement entre les tuiles du joueur (si nécessaire)
 #define PLAYER_SPACE_X 19 // Espacement horizontal entre les tuiles en pixels
 #define PLAYER_SPACE_Y 0  // Espacement vertical entre les tuiles en pixels
 

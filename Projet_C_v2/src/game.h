@@ -1,34 +1,35 @@
-// game.h
-
 #ifndef GAME_H
 #define GAME_H
+
+#include <SDL.h>
+#include <SDL_image.h>
+#include <stdio.h>
 
 #include "graphics.h"
 #include "level.h"
 #include "player.h"
 #include "input.h"
 #include "menu.h"
+#include "settings_menu.h"
+#include "music.h"
 
-// Déclaration des variables globales
+// Variables globales
 extern SDL_Window* window;
 extern SDL_Renderer* renderer;
 extern int running;
 
-// Déclaration de l'énumération GameState
+// États du jeu
 typedef enum {
     GAME_STATE_MENU,
-    GAME_STATE_SAVE_MENU,  // Nouvel état pour le menu des sauvegardes
+    GAME_STATE_SAVE_MENU,  // si vous en avez besoin
     GAME_STATE_PLAYING,
-    // Ajoutez d'autres états si nécessaire
+    GAME_STATE_SETTINGS    // nouvel état pour le menu des paramètres
 } GameState;
 
-// Déclaration de la variable globale currentGameState
 extern GameState currentGameState;
-
-// Déclaration de la variable globale currentLevel
 extern int currentLevel;
 
-// Déclarations des fonctions
+// Fonctions globales du jeu
 int initGame();
 void gameLoop();
 void cleanupGame();
