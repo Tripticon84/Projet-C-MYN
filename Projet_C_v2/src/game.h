@@ -23,7 +23,8 @@ typedef enum {
     GAME_STATE_MENU,
     GAME_STATE_SAVE_MENU,  // si vous en avez besoin
     GAME_STATE_PLAYING,
-    GAME_STATE_SETTINGS    // nouvel état pour le menu des paramètres
+    GAME_STATE_SETTINGS,    // nouvel état pour le menu des paramètres
+    GAME_STATE_EDITOR       // nouvel état pour l'éditeur de niveau
 } GameState;
 
 extern GameState currentGameState;

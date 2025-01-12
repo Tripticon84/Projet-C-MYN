@@ -116,6 +116,15 @@ void gameLoop() {
                 SDL_RenderPresent(renderer);
                 break;
 
+            case GAME_STATE_EDITOR:
+                handleEditorInput();
+                updateEditor();
+
+                SDL_RenderClear(renderer);
+                drawEditor();
+                SDL_RenderPresent(renderer);
+                break;
+
                 // Si vous avez d'autres états, ajoutez-les ici
             default:
                 break;
