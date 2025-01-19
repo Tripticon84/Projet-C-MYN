@@ -32,6 +32,10 @@ add_executable(${PROJECT_NAME} ${SOURCES}
         src/menu.h
         src/music.h
         src/settings_menu.c
+        src/editorLevelName.c
+        src/editorLevelName.h
+        src/editor.c
+        src/editor.h
 )
 
 # Lier les bibliothèques SDL2, SDL2_image, SDL2_ttf et SDL2_mixer, avec -lmingw32 au début

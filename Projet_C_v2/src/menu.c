@@ -2,7 +2,7 @@
 #include "game.h"
 #include <SDL_ttf.h>
 
-#define MAX_BUTTONS 3
+#define MAX_BUTTONS 4
 static Button buttons[MAX_BUTTONS];
 static int selectedButton = 0;
 static TTF_Font* font = NULL;
@@ -22,7 +22,8 @@ void initMenu() {
     const char* buttonTexts[MAX_BUTTONS] = {
             "Play",
             "Parameters",
-            "Quit"
+            "Quit",
+            "Editor"
     };
 
     for (int i=0; i<MAX_BUTTONS; i++){
@@ -31,7 +32,7 @@ void initMenu() {
         buttons[i].rect.w = 400;
         buttons[i].rect.h = 100;
         buttons[i].rect.x = (792 - 400)/2;
-        buttons[i].rect.y = 150 + i*120;
+        buttons[i].rect.y = 80 + i*120;
         buttons[i].texture = NULL;
     }
 }
@@ -51,7 +52,6 @@ void handleMenuInput() {
                     selectedButton++;
                     if (selectedButton>=MAX_BUTTONS) selectedButton = 0;
                     break;
-                case SDLK_RETURN:
                 case SDLK_SPACE:
                     if (selectedButton == 0) {
                         // Play
@@ -65,8 +65,11 @@ void handleMenuInput() {
                         // Quit
                         SDL_Log("Quitter le jeu");
                         running = 0;
+                    }else if (selectedButton==3) {
+                        currentGameState=GAME_STATE_EDITOR_LEVEL_NAME;
+
                     }
-                    break;
+                break;
                 case SDLK_ESCAPE:
                     running = 0;
                     break;
@@ -87,6 +90,9 @@ void handleMenuInput() {
                             initSettingsMenu();
                         } else if (i==2) {
                             running = 0;
+                        }else if (i==3) {
+                            currentGameState=GAME_STATE_EDITOR_LEVEL_NAME;
+
                         }
                     }
                 }
