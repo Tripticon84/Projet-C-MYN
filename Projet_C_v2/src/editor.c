@@ -1,5 +1,9 @@
 #include "editor.h"
+static char tiles[]={'.', '#', 'K', 'D', 'S'};
+static int lengthTiles = 5;
 
+char cursorX = 0;
+char cursorY = 0;
 
 void initEditor(const char* pathToFile) {
     loadLevel(pathToFile);
@@ -26,25 +30,39 @@ void handleEditorInput() {
             // Mettre à jour la position du curseur en fonction de la touche pressée
             switch (event.key.keysym.sym) {
                 case SDLK_UP:
-                    if (cursorRect.y > 0)  // Empêcher de sortir par le haut
+                    if (cursorRect.y > 0) { // Empêcher de sortir par le haut
                         cursorRect.y -= TILE_HEIGHT * RENDER_SCALE;
+                        cursorY--;
+                    }
                     break;
                 case SDLK_DOWN:
-                    if (cursorRect.y < (LEVEL_HEIGHT - 1) * TILE_HEIGHT * RENDER_SCALE)  // Empêcher de sortir par le bas
+                    if (cursorRect.y < (LEVEL_HEIGHT - 1) * TILE_HEIGHT * RENDER_SCALE) {  // Empêcher de sortir par le bas
                         cursorRect.y += TILE_HEIGHT * RENDER_SCALE;
+                        cursorY++;
+                    }
                     break;
                 case SDLK_LEFT:
-                    if (cursorRect.x > 0)  // Empêcher de sortir à gauche
+                    if (cursorRect.x > 0) {  // Empêcher de sortir à gauche
                         cursorRect.x -= TILE_WIDTH * RENDER_SCALE;
+                        cursorX--;
+                    }
                     break;
                 case SDLK_RIGHT:
-                    if (cursorRect.x < (LEVEL_WIDTH - 1) * TILE_WIDTH * RENDER_SCALE)  // Empêcher de sortir à droite
+                    if (cursorRect.x < (LEVEL_WIDTH - 1) * TILE_WIDTH * RENDER_SCALE) {  // Empêcher de sortir à droite
                         cursorRect.x += TILE_WIDTH * RENDER_SCALE;
+                        cursorX++;
+                    }
                     break;
+                case SDLK_SPACE:
+                    // CHANGER LA TILE À CETTE POSITION;
+                    // Par exemple, changer la tuile à la position du curseur en un mur
+                    updateTile();
+
+                break;
                 case SDLK_ESCAPE:
                     // Retourner au menu principal
-                    currentGameState = GAME_STATE_MENU;
-                    break;
+                        currentGameState = GAME_STATE_MENU;
+                break;
                 default:
                     break;
             }
@@ -57,9 +75,58 @@ void handleEditorInput() {
     }
 }
 
-void updateEditor() {
-    // Mettre à jour la logique de l'éditeur si nécessaire
+void saveLevel() {
+    FILE* fptr = fopen(pathToFile, "w");
+    if (fptr == NULL) {
+        printf("Erreur lors de l'ouverture du fichier %s pour l'écriture.\n", pathToFile);
+        return;
+    }
+
+    for (int y = 0; y < LEVEL_HEIGHT; y++) {
+        for (int x = 0; x < LEVEL_WIDTH; x++) {
+            fputc(levelData[y][x], fptr);
+        }
+        fputc('\n', fptr);
+    }
+
+    fclose(fptr);
 }
+
+
+
+void updateTile() {
+    char tuile = levelData[cursorY][cursorX];
+
+    int i;
+    switch (tuile) {
+        case '.':
+            i = 0;
+            break;
+        case '#':
+            i = 1;
+            break;
+        case 'K':
+            i = 2;
+            break;
+        case 'D':
+            i = 3;
+            break;
+        case 'S':
+            i = 4;
+            break;
+        default:
+            i = 0;
+            break;
+    }
+
+    i = (i + 1) % lengthTiles;
+
+
+    levelData[cursorY][cursorX] = tiles[i];
+    setTileAt(cursorX, cursorY, tiles[i]);
+
+}
+
 
 void drawEditor() {
     drawLevel(); // Dessiner le niveau actuel

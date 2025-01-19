@@ -97,6 +97,7 @@ void gameLoop() {
                 cleanupEditorLevelName();
                 initEditor(pathToFile);
             } else if (previousGameState == GAME_STATE_EDITOR && currentGameState == GAME_STATE_MENU) {
+                saveLevel();
                 cleanupEditor();
                 initMenu();
             }
@@ -146,7 +147,6 @@ void gameLoop() {
                 drawEditor();
                 SDL_RenderPresent(renderer);
                 break;
-                // Si vous avez d'autres états, ajoutez-les ici
             default:
                 break;
         }
