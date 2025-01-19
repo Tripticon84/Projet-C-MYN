@@ -14,6 +14,8 @@ static int inputTextLength = 0;
 
 
 void initEditorLevelName() {
+    pathToFile = NULL; // Réinitialiser pathToFile
+
     if (TTF_Init() == -1) {
         printf("Erreur TTF init: %s\n", TTF_GetError());
         return;
@@ -74,7 +76,7 @@ char* initFile(char* name) {
     FILE* file = fopen(path, "w");
     if (file == NULL) {
         fprintf(stderr, "Erreur lors de la création du fichier\n");
-        exit(EXIT_FAILURE);
+        exit(500);
     }
 
 
@@ -90,19 +92,6 @@ char* initFile(char* name) {
     }
     fclose(file);
     return path;
-}
-
-int fileNameAlreadyExist(char* name) {
-    char path2[300];
-
-    snprintf(path2, sizeof(path2), "../assets/levels/%s.txt", name);
-
-    FILE* file = fopen(path2, "r");
-    if (file) {
-        fclose(file);
-        return 1;
-    }
-    return 0;
 }
 
 
@@ -165,5 +154,6 @@ void cleanupEditorLevelName() {
     }
 
     SDL_StopTextInput();
+    inputText[0] = '\0';
 }
 

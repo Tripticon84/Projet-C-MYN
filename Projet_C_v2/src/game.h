@@ -11,8 +11,8 @@
 #include "input.h"
 #include "menu.h"
 #include "settings_menu.h"
-#include "music.h"
 #include "editorLevelName.h"
+#include "music.h"
 
 extern char* pathToFile;
 

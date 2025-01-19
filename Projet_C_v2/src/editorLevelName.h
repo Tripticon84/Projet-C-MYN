@@ -1,11 +1,8 @@
 
-#ifndef EDITOR_H
-#define EDITOR_H
+#ifndef EDITOR_LEVEL_NAME_H
+#define EDITOR_LEVEL_NAME_H
 
 #include "game.h"
-
-
-#include <SDL.h>
 
 
 typedef struct {
@@ -20,6 +17,5 @@ void handleEditorLevelNameInput();
 void drawEditorLevelName();
 void cleanupEditorLevelName();
 char* initFile(char* name);
-int fileNameAlreadyExist(char* name);
 
-#endif // EDITOR_H
+#endif // EDITOR_LEVEL_NAME_H

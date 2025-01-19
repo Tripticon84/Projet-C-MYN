@@ -96,6 +96,9 @@ void gameLoop() {
             } else if (previousGameState == GAME_STATE_EDITOR_LEVEL_NAME && currentGameState == GAME_STATE_EDITOR) {
                 cleanupEditorLevelName();
                 initEditor(pathToFile);
+            } else if (previousGameState == GAME_STATE_EDITOR && currentGameState == GAME_STATE_MENU) {
+                cleanupEditor();
+                initMenu();
             }
             previousGameState = currentGameState;
         }
@@ -137,8 +140,7 @@ void gameLoop() {
                 SDL_RenderPresent(renderer);
                 break;
             case GAME_STATE_EDITOR:
-                //handleInputEditor();
-                //updateEditor();
+                handleEditorInput();
 
                 SDL_RenderClear(renderer);
                 drawEditor();

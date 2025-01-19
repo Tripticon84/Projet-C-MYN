@@ -52,6 +52,7 @@ void handleMenuInput() {
                     selectedButton++;
                     if (selectedButton>=MAX_BUTTONS) selectedButton = 0;
                     break;
+                case SDLK_RETURN:
                 case SDLK_SPACE:
                     if (selectedButton == 0) {
                         // Play

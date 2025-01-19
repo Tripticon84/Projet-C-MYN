@@ -5,7 +5,7 @@ void initEditor(const char* pathToFile) {
     loadLevel(pathToFile);
 }
 
-void drawcursor() {
+void drawCursor() {
     // Sauvegarde de la couleur de dessin actuelle
     unsigned char r, g, b, a;
     SDL_GetRenderDrawColor(renderer, &r, &g, &b, &a);
@@ -41,6 +41,10 @@ void handleEditorInput() {
                     if (cursorRect.x < (LEVEL_WIDTH - 1) * TILE_WIDTH * RENDER_SCALE)  // Empêcher de sortir à droite
                         cursorRect.x += TILE_WIDTH * RENDER_SCALE;
                     break;
+                case SDLK_ESCAPE:
+                    // Retourner au menu principal
+                    currentGameState = GAME_STATE_MENU;
+                    break;
                 default:
                     break;
             }
@@ -59,5 +63,11 @@ void updateEditor() {
 
 void drawEditor() {
     drawLevel(); // Dessiner le niveau actuel
-    drawcursor(); // Dessiner le curseur
+    drawCursor(); // Dessiner le curseur
+}
+
+void cleanupEditor() {
+    // Nettoyer les ressources de l'éditeur si nécessaire
+    cleanupLevel();
+
 }
