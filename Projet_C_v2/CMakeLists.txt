@@ -28,7 +28,8 @@ include_directories(
 file(GLOB_RECURSE SOURCES ${PROJECT_SOURCE_DIR}/src/*.c)
 
 # Créer l'exécutable
-add_executable(${PROJECT_NAME} ${SOURCES})
+add_executable(${PROJECT_NAME} ${SOURCES}
+        src/tower.h)
 
 # Lier les bibliothèques SDL2, SDL2_image, SDL2_ttf et SDL2_mixer, avec -lmingw32 au début
 target_link_libraries(${PROJECT_NAME}
