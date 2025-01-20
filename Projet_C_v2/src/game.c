@@ -1,11 +1,14 @@
 #include "game.h"
 
+
 // Variables globales du jeu
 SDL_Window* window = NULL;
 SDL_Renderer* renderer = NULL;
 int running = 1;
 GameState currentGameState = GAME_STATE_MENU;
 int currentLevel = 1; // Niveau actuel
+
+char* pathToFile = NULL;
 
 int initGame() {
     // Initialiser SDL
@@ -82,8 +85,22 @@ void gameLoop() {
                 cleanupPlayer();
                 cleanupLevel();
                 initMenu();
+            } else if (previousGameState == GAME_STATE_MENU && currentGameState == GAME_STATE_EDITOR_LEVEL_NAME) {
+                // On ouvre l'éditeur de niveau depuis le menu principal
+                cleanupMenu();
+                initEditorLevelName();
+            } else if (previousGameState == GAME_STATE_EDITOR_LEVEL_NAME && currentGameState == GAME_STATE_MENU) {
+                // Si on retourne au menu principal depuis le jeu (pas implémenté ici, juste un exemple)
+                cleanupEditorLevelName();
+                initMenu();
+            } else if (previousGameState == GAME_STATE_EDITOR_LEVEL_NAME && currentGameState == GAME_STATE_EDITOR) {
+                cleanupEditorLevelName();
+                initEditor(pathToFile);
+            } else if (previousGameState == GAME_STATE_EDITOR && currentGameState == GAME_STATE_MENU) {
+                saveLevel();
+                cleanupEditor();
+                initMenu();
             }
-
             previousGameState = currentGameState;
         }
 
@@ -116,7 +133,20 @@ void gameLoop() {
                 SDL_RenderPresent(renderer);
                 break;
 
-                // Si vous avez d'autres états, ajoutez-les ici
+            case GAME_STATE_EDITOR_LEVEL_NAME:
+                handleEditorLevelNameInput();
+
+                SDL_RenderClear(renderer);
+                drawEditorLevelName();
+                SDL_RenderPresent(renderer);
+                break;
+            case GAME_STATE_EDITOR:
+                handleEditorInput();
+
+                SDL_RenderClear(renderer);
+                drawEditor();
+                SDL_RenderPresent(renderer);
+                break;
             default:
                 break;
         }
