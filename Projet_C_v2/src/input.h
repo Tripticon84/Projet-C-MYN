@@ -5,6 +5,8 @@
 
 #include "graphics.h"
 #include "player.h"
+#include "game.h"
+
 
 // Fonction pour gérer les entrées utilisateur
 void handleInput();

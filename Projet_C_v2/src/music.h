@@ -2,6 +2,9 @@
 #define MUSIC_H
 
 #include <SDL_mixer.h>
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 // Initialise le sous-système audio et charge la musique
 int initMusic();
@@ -10,7 +13,7 @@ int initMusic();
 void playMusic();
 
 // Coupe ou rétablit la musique selon mute (1 = mute, 0 = unmute)
-void setMusicMute(int mute);
+int setMusicMute(int mute);
 
 // Renvoie 1 si la musique est mute, 0 sinon
 int isMusicMuted();

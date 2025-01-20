@@ -10,7 +10,7 @@ void handleInput() {
         if (event.type == SDL_QUIT) {
             running = 0;
         } else if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE) {
-            running = 0;
+            currentGameState=GAME_STATE_MENU;
         }
     }
 
