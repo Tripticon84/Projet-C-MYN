@@ -73,29 +73,30 @@ char* initFile(char* name) {
     strcpy(path, "../assets/levels/");
     strcat(path, strcat(name, ".txt"));
 
-    FILE* file = fopen(path, "w");
+    FILE* file = fopen(path, "r+");
     if (file == NULL) {
-        fprintf(stderr, "Erreur lors de la création du fichier\n");
-        exit(500);
-    }
-
-
-    for (int y = 0; y < LEVEL_HEIGHT; y++) {
-        for (int x = 0; x < LEVEL_WIDTH; x++) {
-            if ( y == LEVEL_HEIGHT - 1 || x == 0 || x == LEVEL_WIDTH - 1) {
-                fputc('#', file);
-            } else {
-                fputc('.', file);
-            }
+        file = fopen(path, "w");
+        if (file == NULL) {
+            fprintf(stderr, "Erreur lors de la création du fichier\n");
+            exit(500);
         }
-        fputc('\n', file);
+        for (int y = 0; y < LEVEL_HEIGHT; y++) {
+            for (int x = 0; x < LEVEL_WIDTH; x++) {
+                if ( y == LEVEL_HEIGHT - 1 || x == 0 || x == LEVEL_WIDTH - 1) {
+                    fputc('#', file);
+                } else {
+                    fputc('.', file);
+                }
+            }
+            fputc('\n', file);
+        }
+
     }
     fclose(file);
     return path;
 }
 
-
-void drawEditorLevelName() {
+void drawEditorLevelName(){
     SDL_SetRenderDrawColor(renderer, 100,100,100,255);
     SDL_RenderFillRect(renderer, &square.rect);
     SDL_SetRenderDrawColor(renderer,0,0,0,255);
