@@ -1,13 +1,15 @@
-#include "menu.h"
+#include "save_menu.h"
 #include "game.h"
-#include <SDL_ttf.h>
 
-#define MAX_BUTTONS 4
-static Button buttons[MAX_BUTTONS];
+Save save;
+
+
+#define MAX_BUTTONS 3
+static SaveButton buttons[MAX_BUTTONS];
 static int selectedButton = 0;
 static TTF_Font* font = NULL;
 
-void initMenu() {
+void initSaveMenu() {
     if (TTF_Init() == -1) {
         printf("Erreur TTF init: %s\n", TTF_GetError());
         return;
@@ -20,59 +22,63 @@ void initMenu() {
     }
 
     const char* buttonTexts[MAX_BUTTONS] = {
-            "Play",
-            "Parameters",
-            "Quit",
-            "Editor"
-    };
+        "Save 1",
+        "Save 2",
+        "Save 3"
+};
 
-    for (int i=0; i<MAX_BUTTONS; i++){
+    for (int i = 0; i < MAX_BUTTONS; i++) {
         buttons[i].text = buttonTexts[i];
-        buttons[i].isSelected = (i==selectedButton);
-        buttons[i].rect.w = 400;
-        buttons[i].rect.h = 100;
-        buttons[i].rect.x = (792 - 400)/2;
-        buttons[i].rect.y = 80 + i*120;
+        buttons[i].isSelected = (i == selectedButton);
+
+        buttons[i].rect.w = 200; // Largeur réduite
+        buttons[i].rect.h = 300; // Hauteur augmentée
+
+        int spacing = (792 - (3 * 200)) / 4; // Espacement entre les boutons
+        buttons[i].rect.x = spacing + i * (200 + spacing);
+        buttons[i].rect.y = (612 - 300) / 2; // Centrer verticalement
+
         buttons[i].texture = NULL;
     }
 }
 
-void handleMenuInput() {
+void handleSaveMenuInput() {
     SDL_Event event;
     while(SDL_PollEvent(&event)) {
         if (event.type == SDL_QUIT) {
             running = 0;
         } else if (event.type == SDL_KEYDOWN) {
             switch(event.key.keysym.sym) {
-                case SDLK_UP:
+                case SDLK_LEFT:
                     selectedButton--;
                     if (selectedButton<0) selectedButton = MAX_BUTTONS-1;
                     break;
-                case SDLK_DOWN:
+                case SDLK_RIGHT:
                     selectedButton++;
                     if (selectedButton>=MAX_BUTTONS) selectedButton = 0;
                     break;
                 case SDLK_RETURN:
                 case SDLK_SPACE:
                     if (selectedButton == 0) {
-                        // Play
-                        currentGameState = GAME_STATE_SAVE_MENU;
+                        // Save 1
+                        currentGameState = GAME_STATE_PLAYING;
+                        cleanupSaveMenu();
+                        initSave(1);
                     } else if (selectedButton == 1) {
-                        // Parameters
-                        currentGameState = GAME_STATE_SETTINGS;
-                        cleanupMenu();
-                        initSettingsMenu();
+                        // Save 2
+                        currentGameState = GAME_STATE_PLAYING;
+                        cleanupSaveMenu();
+                        initSave(2);
                     } else if (selectedButton == 2) {
-                        // Quit
-                        SDL_Log("Quitter le jeu");
-                        running = 0;
-                    }else if (selectedButton==3) {
-                        currentGameState=GAME_STATE_EDITOR_LEVEL_NAME;
-
+                        // Save 3
+                        currentGameState = GAME_STATE_PLAYING;
+                        cleanupSaveMenu();
+                        initSave(3);
                     }
-                break;
+                    break;
                 case SDLK_ESCAPE:
-                    running = 0;
+                    currentGameState = GAME_STATE_MENU;
+                    cleanupSaveMenu();
                     break;
                 default: break;
             }
@@ -83,32 +89,76 @@ void handleMenuInput() {
                 for (int i=0; i<MAX_BUTTONS; i++){
                     if (x>=buttons[i].rect.x && x<=buttons[i].rect.x+buttons[i].rect.w &&
                         y>=buttons[i].rect.y && y<=buttons[i].rect.y+buttons[i].rect.h) {
-                        if (i==0) {
-                            currentGameState = GAME_STATE_SAVE_MENU;
-                        } else if (i==1) {
-                            currentGameState = GAME_STATE_SETTINGS;
-                            cleanupMenu();
-                            initSettingsMenu();
-                        } else if (i==2) {
-                            running = 0;
-                        }else if (i==3) {
-                            currentGameState=GAME_STATE_EDITOR_LEVEL_NAME;
-
+                            if (i==0) {
+                                currentGameState = GAME_STATE_PLAYING;
+                                cleanupSaveMenu();
+                                initSave(1);
+                            } else if (i==1) {
+                                currentGameState = GAME_STATE_PLAYING;
+                                cleanupSaveMenu();
+                                initSave(2);
+                            } else if (i==2) {
+                                currentGameState = GAME_STATE_PLAYING;
+                                cleanupSaveMenu();
+                                initSave(3);
+                            }
                         }
                     }
                 }
             }
         }
-    }
 }
 
-void updateMenu() {
+
+void createSave(const int saveIndex) {
+    // Créer le fichier de sauvegarde
+    char filename[256];
+    sprintf(filename, "../saves/save%d.sav", saveIndex);
+    FILE* file = fopen(filename, "wb+");
+    if (file == NULL) {
+        printf("Erreur création sauvegarde %s\n", filename);
+        SDL_Error(500);
+    }
+
+    Save newSave = {
+        .levelName = "level1",
+        .levelPath = "../assets/levels/level1.txt",
+        .hearts = 3,
+        .score = 0,
+        .difficulty = 1
+    };
+
+    fwrite(&newSave, sizeof(Save), 1, file);
+
+    fclose(file);
+}
+
+void initSave(const int saveIndex) {
+    // Charger le fichier de sauvegarde
+    char filename[256];
+    sprintf(filename, "../saves/save%d.sav", saveIndex);
+    FILE* file = fopen(filename, "rb+");
+    if (file == NULL) {
+        createSave(saveIndex);
+        file = fopen(filename, "rb+");
+        if (file == NULL) {
+            printf("Erreur ouverture sauvegarde %s\n", filename);
+            SDL_Error(500);
+        }
+    }
+
+    // Lire les données de sauvegarde
+    fread(&save, sizeof(Save), 1, file);
+    fclose(file);
+}
+
+void updateSaveMenu() {
     for (int i=0; i<MAX_BUTTONS; i++){
         buttons[i].isSelected = (i==selectedButton);
     }
 }
 
-void drawMenu() {
+void drawSaveMenu() {
     for (int i=0; i<MAX_BUTTONS; i++){
         SDL_SetRenderDrawColor(renderer, 100,100,100,255);
         if (buttons[i].isSelected) {
@@ -144,7 +194,7 @@ void drawMenu() {
     }
 }
 
-void cleanupMenu() {
+void cleanupSaveMenu() {
     for (int i=0; i<MAX_BUTTONS; i++){
         if (buttons[i].texture){
             SDL_DestroyTexture(buttons[i].texture);

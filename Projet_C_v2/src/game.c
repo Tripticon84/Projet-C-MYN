@@ -69,9 +69,9 @@ void gameLoop() {
             // Changement d'état du jeu
             if (previousGameState == GAME_STATE_MENU && currentGameState == GAME_STATE_PLAYING) {
                 // On vient de quitter le menu pour jouer
-                cleanupMenu(); // On nettoie le menu
-                initPlayer();
-                loadLevel("../assets/levels/level1.txt");
+                //cleanupMenu(); // On nettoie le menu
+                //initPlayer();
+                //loadLevel("../assets/levels/level1.txt");
             } else if (previousGameState == GAME_STATE_MENU && currentGameState == GAME_STATE_SETTINGS) {
                 // On ouvre le menu des paramètres depuis le menu principal
                 cleanupMenu();
@@ -100,6 +100,16 @@ void gameLoop() {
                 saveLevel();
                 cleanupEditor();
                 initMenu();
+            } else if(previousGameState==GAME_STATE_MENU && currentGameState==GAME_STATE_SAVE_MENU) {
+                cleanupMenu();
+                initSaveMenu();
+            } else if (previousGameState==GAME_STATE_SAVE_MENU && currentGameState==GAME_STATE_MENU) {
+                cleanupSaveMenu();
+                initMenu();
+            } else if (previousGameState==GAME_STATE_SAVE_MENU && currentGameState==GAME_STATE_PLAYING) {
+                cleanupSaveMenu();
+                initPlayer();
+                loadLevel(save.levelPath);
             }
             previousGameState = currentGameState;
         }
@@ -147,6 +157,14 @@ void gameLoop() {
                 drawEditor();
                 SDL_RenderPresent(renderer);
                 break;
+            case GAME_STATE_SAVE_MENU:
+                handleSaveMenuInput();
+                updateSaveMenu();
+
+                SDL_RenderClear(renderer);
+                drawSaveMenu();
+                SDL_RenderPresent(renderer);
+                break;
             default:
                 break;
         }
@@ -165,6 +183,7 @@ void cleanupGame() {
     } else if (currentGameState == GAME_STATE_SETTINGS) {
         cleanupSettingsMenu();
     }
+
 
     cleanupMusic();
 
