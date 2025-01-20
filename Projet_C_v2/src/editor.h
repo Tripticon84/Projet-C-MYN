@@ -16,6 +16,7 @@ void drawCursor();
 void cleanupEditor();
 void updateTile();
 void saveLevel();
+void deleteTile();
 static SDL_Rect cursorRect = {0, 0, TILE_WIDTH * RENDER_SCALE, TILE_HEIGHT * RENDER_SCALE};
 
 #endif // EDITOR_H

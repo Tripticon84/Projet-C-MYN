@@ -57,8 +57,10 @@ void handleEditorInput() {
                     // CHANGER LA TILE À CETTE POSITION;
                     // Par exemple, changer la tuile à la position du curseur en un mur
                     updateTile();
-
                 break;
+                case SDLK_DELETE:
+                    deleteTile();
+                    break;
                 case SDLK_ESCAPE:
                     // Retourner au menu principal
                         currentGameState = GAME_STATE_MENU;
@@ -92,7 +94,10 @@ void saveLevel() {
     fclose(fptr);
 }
 
-
+void deleteTile() {
+    levelData[cursorY][cursorX] = '.';
+    setTileAt(cursorX, cursorY, '.');
+}
 
 void updateTile() {
     char tuile = levelData[cursorY][cursorX];
