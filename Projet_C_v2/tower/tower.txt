@@ -1,5 +1,2 @@
 level1.txt
 level2.txt
-bite.txt
-apagnan.txt
-lolll.txt
