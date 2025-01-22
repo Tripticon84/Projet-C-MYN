@@ -13,6 +13,7 @@ typedef struct {
     int isSelected;
 } SaveButton;
 
+extern int saveIndex;
 
 void initSaveMenu();
 void handleSaveMenuInput();

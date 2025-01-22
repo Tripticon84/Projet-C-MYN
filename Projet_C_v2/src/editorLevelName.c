@@ -51,9 +51,10 @@ void handleEditorLevelNameInput() {
             if (event.key.keysym.sym == SDLK_BACKSPACE && inputTextLength > 0) {
                 inputText[--inputTextLength] = '\0';
             } else if (event.key.keysym.sym == SDLK_RETURN) {
-
                 pathToFile = initFile(inputText);
+                addLevelToTower(inputText);
                 currentGameState = GAME_STATE_EDITOR;
+
             }
         } else if (event.type == SDL_TEXTINPUT) {
             if (inputTextLength < sizeof(inputText) - 1) {
@@ -68,7 +69,7 @@ void handleEditorLevelNameInput() {
 }
 
 char* initFile(char* name) {
-    static char path[300];
+    static char path[256];
 
     strcpy(path, "../assets/levels/");
     strcat(path, strcat(name, ".txt"));
@@ -93,6 +94,9 @@ char* initFile(char* name) {
 
     }
     fclose(file);
+
+    //addLevelToTower(path);
+
     return path;
 }
 

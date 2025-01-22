@@ -20,7 +20,7 @@ int initMusic() {
     }
 
 
-    backgroundMusic = Mix_LoadMUS("../assets/music/Gwyn.mp3");
+    backgroundMusic = Mix_LoadMUS("../assets/music/background.mp3");
 
     if (backgroundMusic == NULL) {
         printf("Erreur chargement musique: %s\n", Mix_GetError());

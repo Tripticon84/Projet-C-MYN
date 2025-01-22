@@ -57,6 +57,8 @@ int initGame() {
 
     // Initialiser le menu principal
     initMenu();
+    initTower();
+
 
     return 0;
 }
@@ -67,12 +69,7 @@ void gameLoop() {
     while (running) {
         if (previousGameState != currentGameState) {
             // Changement d'état du jeu
-            if (previousGameState == GAME_STATE_MENU && currentGameState == GAME_STATE_PLAYING) {
-                // On vient de quitter le menu pour jouer
-                //cleanupMenu(); // On nettoie le menu
-                //initPlayer();
-                //loadLevel("../assets/levels/level1.txt");
-            } else if (previousGameState == GAME_STATE_MENU && currentGameState == GAME_STATE_SETTINGS) {
+            if (previousGameState == GAME_STATE_MENU && currentGameState == GAME_STATE_SETTINGS) {
                 // On ouvre le menu des paramètres depuis le menu principal
                 cleanupMenu();
                 initSettingsMenu();
@@ -110,6 +107,7 @@ void gameLoop() {
                 cleanupSaveMenu();
                 initPlayer();
                 loadLevel(save.levelPath);
+
             }
             previousGameState = currentGameState;
         }
@@ -184,6 +182,7 @@ void cleanupGame() {
         cleanupSettingsMenu();
     }
 
+    cleanupTower();
 
     cleanupMusic();
 

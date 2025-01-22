@@ -1,40 +1,115 @@
 #include "tower.h"
 
+int levelCount = 0;
+char** tower = NULL;
+
 void createTower() {
-    FILE* file = fopen("../saves/tower.lvl", "w+");
+    FILE* file = fopen("../tower/tower.txt", "w");
     if (file == NULL) {
-        printf("Erreur création sauvegarde %s\n", file);
+        printf("Erreur création du fichier tower\n");
         SDL_Error(500);
     }
 
-    char* tower[] = { "../assets/levels/level1.txt", "../assets/levels/level2.txt"};
-    fwrite(tower, sizeof(tower), 1, file);
+    const char* initialTower[] = { "level1.txt", "level2.txt" };
 
+    for (int i = 0; i < 2; i++) {
+        fprintf(file, "%s\n", initialTower[i]);
+    }
     fclose(file);
 }
 
-
 void initTower() {
-
-    FILE* file = fopen("../saves/tower.lvl", "rb+");
+    FILE* file = fopen("../tower/tower.txt", "r");
     if (file == NULL) {
         createTower();
-        file = fopen("../saves/tower.lvl", "rb+");
+        file = fopen("../tower/tower.txt", "r");
         if (file == NULL) {
-            printf("Erreur ouverture sauvegarde %s\n", "../saves/tower.lvl");
-            SDL_Error(501);
+            printf("Erreur ouverture sauvegarde %s\n", "../tower/tower.txt");
+            exit(501);
         }
     }
 
     // Lire les données de tower
-    fseek(file, 0, SEEK_END);
-    long fileSize = ftell(file);
-    fseek(file, 0, SEEK_SET);
+    char levelName[256];
+    levelCount = 0;
+    tower = NULL; // Initialiser le tableau à NULL
 
-    char** tower = malloc(fileSize);
-    fread(tower, fileSize, 1, file);
+    while (fgets(levelName, 256, file) != NULL) {
+        // Supprimer le caractère '\n' à la fin de la chaîne
+        levelName[strcspn(levelName, "\n")] = '\0';
 
+        // Redimensionner le tableau principal
+        char** temp = realloc(tower, (levelCount + 1) * sizeof(char*));
+        if (temp == NULL) {
+            perror("Erreur de réallocation mémoire");
+            exit(502);
+        }
+        tower = temp;
 
-
-    fclose(file);
+        // Allouer de la mémoire pour la nouvelle chaîne et copier les données
+        tower[levelCount] = malloc(strlen(levelName) + 1);
+        if (tower[levelCount] == NULL) {
+            perror("Erreur d'allocation mémoire pour un niveau");
+            exit(503);
+        }
+        strcpy(tower[levelCount], levelName);
+        levelCount++;
     }
+    fclose(file);
+}
+
+void addLevelToTower(const char* levelName) {
+
+    if (checkNameTower(levelName) == 1) {
+        return;
+    }
+
+
+
+    // Ajouter le nouveau niveau au fichier
+    FILE* file = fopen("../tower/tower.txt", "a");
+    if (file == NULL) {
+        printf("Erreur ouverture sauvegarde %s\n", "../tower/tower.txt");
+        exit(504);
+    }
+
+    fprintf(file, "%s\n", levelName);
+    fclose(file);
+
+    // Ajouter le niveau au tableau en mémoire
+    char** temp = realloc(tower, (levelCount + 1) * sizeof(char*));
+    if (temp == NULL) {
+        perror("Erreur de réallocation mémoire");
+        exit(505);
+    }
+    tower = temp;
+
+    tower[levelCount] = malloc(strlen(levelName) + 1);
+    if (tower[levelCount] == NULL) {
+        perror("Erreur d'allocation mémoire pour un niveau");
+        exit(506);
+    }
+    strcpy(tower[levelCount], levelName);
+    levelCount++;
+}
+
+int checkNameTower(const char* levelName) {
+    for (int i = 0; i < levelCount; i++) {
+        if (strcmp(levelName, tower[i]) == 0) {
+            currentLevel = i;
+            return 1;
+        }
+    }
+    return 0;
+}
+
+
+    void cleanupTower() {
+        for (int i = 0; i < levelCount; i++) {
+            free(tower[i]);
+        }
+        free(tower);
+    }
+
+
+

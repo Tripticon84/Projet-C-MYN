@@ -3,6 +3,8 @@
 
 Save save;
 
+int saveIndex = -1;
+
 
 #define MAX_BUTTONS 3
 static SaveButton buttons[MAX_BUTTONS];
@@ -63,17 +65,20 @@ void handleSaveMenuInput() {
                         // Save 1
                         currentGameState = GAME_STATE_PLAYING;
                         cleanupSaveMenu();
-                        initSave(1);
+                        saveIndex = 1;
+                        initSave(saveIndex);
                     } else if (selectedButton == 1) {
                         // Save 2
                         currentGameState = GAME_STATE_PLAYING;
                         cleanupSaveMenu();
-                        initSave(2);
+                        saveIndex = 2;
+                        initSave(saveIndex);
                     } else if (selectedButton == 2) {
                         // Save 3
                         currentGameState = GAME_STATE_PLAYING;
                         cleanupSaveMenu();
-                        initSave(3);
+                        saveIndex = 3;
+                        initSave(saveIndex);
                     }
                     break;
                 case SDLK_ESCAPE:
@@ -92,15 +97,18 @@ void handleSaveMenuInput() {
                             if (i==0) {
                                 currentGameState = GAME_STATE_PLAYING;
                                 cleanupSaveMenu();
-                                initSave(1);
+                                saveIndex = 1;
+                                initSave(saveIndex);
                             } else if (i==1) {
                                 currentGameState = GAME_STATE_PLAYING;
                                 cleanupSaveMenu();
-                                initSave(2);
+                                saveIndex = 2;
+                                initSave(saveIndex);
                             } else if (i==2) {
                                 currentGameState = GAME_STATE_PLAYING;
                                 cleanupSaveMenu();
-                                initSave(3);
+                                saveIndex = 3;
+                                initSave(saveIndex);
                             }
                         }
                     }
@@ -110,10 +118,10 @@ void handleSaveMenuInput() {
 }
 
 
-void createSave(const int saveIndex) {
+void createSave(const int index) {
     // Créer le fichier de sauvegarde
     char filename[256];
-    sprintf(filename, "../saves/save%d.sav", saveIndex);
+    sprintf(filename, "../saves/save%d.sav", index);
     FILE* file = fopen(filename, "wb+");
     if (file == NULL) {
         printf("Erreur création sauvegarde %s\n", filename);
@@ -133,10 +141,10 @@ void createSave(const int saveIndex) {
     fclose(file);
 }
 
-void initSave(const int saveIndex) {
+void initSave(const int index) {
     // Charger le fichier de sauvegarde
     char filename[256];
-    sprintf(filename, "../saves/save%d.sav", saveIndex);
+    sprintf(filename, "../saves/save%d.sav", index);
     FILE* file = fopen(filename, "rb+");
     if (file == NULL) {
         createSave(saveIndex);
@@ -156,6 +164,22 @@ void updateSaveMenu() {
     for (int i=0; i<MAX_BUTTONS; i++){
         buttons[i].isSelected = (i==selectedButton);
     }
+}
+
+void updateSave(const int index) {
+    // Charger le fichier de sauvegarde
+    char filename[256];
+    sprintf(filename, "../saves/save%d.sav", index);
+    FILE* file = fopen(filename, "wb");
+    if (file == NULL) {
+        printf("Erreur ouverture sauvegarde %s\n", filename);
+        SDL_Error(500);
+    }
+
+    fwrite(&save, sizeof(Save), 1, file);
+
+    fclose(file);
+
 }
 
 void drawSaveMenu() {

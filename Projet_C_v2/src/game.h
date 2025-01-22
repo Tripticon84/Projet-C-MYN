@@ -14,6 +14,7 @@
 #include "editorLevelName.h"
 #include "music.h"
 #include "save_menu.h"
+#include "tower.h"
 
 extern char* pathToFile;
 
