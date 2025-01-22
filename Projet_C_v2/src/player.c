@@ -192,27 +192,121 @@ static void openDoor() {
 }
 
 // Fonction pour passer au niveau suivant
+// Fonction pour passer au niveau suivant
 static void nextLevel() {
-    // Nettoyer le niveau actuel
+    FILE* debug = fopen("../debug.txt", "w");
+
+    Save actualSave = {NULL, NULL, 0, 0, 0}; // Initialisation des pointeurs
+    char actualSaveLevelName[256];
+    char filenameSave[256];
+
+    fprintf(debug, "=== DEBUT DE LA FONCTION nextLevel ===\n");
+
+    // Construire le nom du fichier save
+    snprintf(filenameSave, sizeof(filenameSave), "../saves/save%d.sav", saveIndex);
+    fprintf(debug, "Nom du fichier save : %s\n", filenameSave);
+
+    FILE* file = fopen(filenameSave, "rb");
+    if (file == NULL) {
+        fprintf(debug, "Erreur : impossible d'ouvrir le fichier save : %s\n", filenameSave);
+        fclose(debug);
+        return;
+    }
+
+    // Lire la sauvegarde actuelle
+    fread(&actualSave, sizeof(Save), 1, file);
+    fclose(file);
+
+    fprintf(debug, "Nom actuel du niveau dans la sauvegarde : %s\n", actualSave.levelName);
+
+    FILE* fileTower = fopen("../tower/tower.txt", "r");
+    if (fileTower == NULL) {
+        fprintf(debug, "Erreur : impossible d'ouvrir le fichier tower\n");
+        fclose(debug);
+        return;
+    }
+
+    char levelName[256];
+    int found = 0;
+
+    // Lecture de `tower.txt` pour trouver le prochain niveau
+    while (fgets(levelName, sizeof(levelName), fileTower) != NULL) {
+        trimNewline(levelName); // Supprimer les caractères '\n'
+
+        if (found) {
+            // La ligne suivante est le prochain niveau
+            actualSave.levelName = malloc(strlen(levelName) + 1);
+            strcpy(actualSave.levelName, levelName);
+            fprintf(debug, "Niveau suivant trouvé : %s\n", actualSave.levelName);
+            break;
+        }
+
+        if (strstr(levelName, actualSave.levelName) != NULL) {
+            found = 1; // Trouvé le niveau actuel, la prochaine ligne sera le suivant
+        }
+    }
+    fclose(fileTower);
+
+    if (!found || !actualSave.levelName) {
+        fprintf(debug, "Erreur : Impossible de trouver le niveau suivant\n");
+        fclose(debug);
+        return;
+    }
+
+    // Construire le chemin complet pour le niveau
+    const char* basePath = "../assets/levels/";
+    actualSave.levelPath = malloc(strlen(basePath) + strlen(actualSave.levelName) + 1);
+    sprintf(actualSave.levelPath, "%s%s", basePath, actualSave.levelName);
+
+    fprintf(debug, "Chemin du niveau suivant : %s\n", actualSave.levelPath);
+
+    // Mettre à jour la sauvegarde
+    file = fopen(filenameSave, "wb");
+    if (file == NULL) {
+        fprintf(debug, "Erreur : impossible d'ouvrir le fichier save en écriture\n");
+        fclose(debug);
+        return;
+    }
+    fwrite(&actualSave, sizeof(Save), 1, file);
+    fclose(file);
+
+    // Charger le niveau
     cleanupLevel();
-    // Charger le niveau suivant
-    extern int currentLevel;
-    currentLevel++;
-    char levelFilename[256];
-    sprintf(levelFilename, "../assets/levels/level%d.txt", currentLevel);
-    loadLevel(levelFilename);
-    // Réinitialiser le joueur
+    loadLevel(actualSave.levelPath);
+
+    fprintf(debug, "Niveau chargé : %s\n", actualSave.levelPath);
     initPlayer();
+
+    // Libération mémoire
+    free(actualSave.levelName);
+    free(actualSave.levelPath);
+
+    fprintf(debug, "=== FIN DE LA FONCTION nextLevel ===\n");
+    fclose(debug);
 }
+
+
 
 // Fonction appelée lorsque le joueur meurt
 static void playerDies() {
     // Réinitialiser le niveau actuel
     cleanupLevel();
-    char levelFilename[256];
-    extern int currentLevel;
-    sprintf(levelFilename, "../assets/levels/level%d.txt", currentLevel);
-    loadLevel(levelFilename);
+    char filenamSave[256];
+
+    Save actSave = {NULL, NULL, 0, 0, 0}; // Initialisation des pointeurs
+    snprintf(filenamSave, sizeof(filenamSave), "../saves/save%d.sav", saveIndex);
+
+    FILE* file = fopen(filenamSave, "rb");
+    if (file == NULL) {
+
+        return;
+    }
+
+    // Lire la sauvegarde actuelle
+    fread(&actSave, sizeof(Save), 1, file);
+    fclose(file);
+
+    loadLevel(actSave.levelPath);
     // Réinitialiser le joueur
     initPlayer();
 }
@@ -237,6 +331,14 @@ void drawPlayer() {
 
     SDL_RenderCopyEx(renderer, player.texture, &srcRect, &player.rect, 0, NULL, flip);
 }
+
+void trimNewline(char* str) {
+    char* pos;
+    if ((pos = strchr(str, '\n')) != NULL) {
+        *pos = '\0';
+    }
+}
+
 
 void cleanupPlayer() {
     if (player.texture) {

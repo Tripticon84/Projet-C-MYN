@@ -92,6 +92,7 @@ void saveLevel() {
     }
 
     fclose(fptr);
+
 }
 
 void deleteTile() {

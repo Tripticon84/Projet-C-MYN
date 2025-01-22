@@ -4,8 +4,9 @@
 #define PLAYER_H
 
 #include "graphics.h"
-
+#include "save_menu.h"
 #include "level.h"
+#include "game.h"
 
 // Dimensions du joueur
 #define PLAYER_WIDTH 13
@@ -60,6 +61,7 @@ void drawPlayer();
 
 // Nettoie les ressources du joueur
 void cleanupPlayer();
+void trimNewline(char* str);
 
 // Accès global au joueur
 extern Player player;

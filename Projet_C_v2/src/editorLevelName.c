@@ -54,7 +54,6 @@ void handleEditorLevelNameInput() {
                 pathToFile = initFile(inputText);
                 addLevelToTower(inputText);
                 currentGameState = GAME_STATE_EDITOR;
-
             }
         } else if (event.type == SDL_TEXTINPUT) {
             if (inputTextLength < sizeof(inputText) - 1) {

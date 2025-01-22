@@ -1,5 +1,5 @@
 # Configuration file for the game
 #this file only take number like 0 and 1, 1 is true and 0 is false , except when a name is asked (you need to right the name + the extension)
 
-music=0
+music=1
 musicName=background.mp3

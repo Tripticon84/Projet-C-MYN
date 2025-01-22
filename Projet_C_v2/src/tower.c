@@ -53,7 +53,10 @@ void initTower() {
             exit(503);
         }
         strcpy(tower[levelCount], levelName);
+        FILE* fichier=fopen("../towertab.txt","a+");
+        fprintf(file,"%s\n",tower[levelCount]);
         levelCount++;
+        fclose(fichier);
     }
     fclose(file);
 }
@@ -104,11 +107,11 @@ int checkNameTower(const char* levelName) {
 }
 
 
-    void cleanupTower() {
-        for (int i = 0; i < levelCount; i++) {
-            free(tower[i]);
-        }
-        free(tower);
+void cleanupTower() {
+    for (int i = 0; i < levelCount; i++) {
+        free(tower[i]);
+    }
+    free(tower);
     }
 
 

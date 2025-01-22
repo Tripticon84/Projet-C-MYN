@@ -3,7 +3,7 @@
 
 Save save;
 
-int saveIndex = -1;
+extern int saveIndex = -1;
 
 
 #define MAX_BUTTONS 3
